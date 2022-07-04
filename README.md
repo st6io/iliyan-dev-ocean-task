@@ -19,8 +19,26 @@ The goal of this task is to create a very basic business directory.
   - Nearby Places: a list of other businesses with the same city as the selected business
 - The image used in the item view is provided in the same HTTP call as the rest of the business information
 
-## Nice to Haves:
+### Nice to Haves:
 
 - Handling edge cases is a bonus
 - The front-end technology stack at Moody’s includes state management libraries and Typescript. It is therefore highly recommended that you use a state management library of your choice (React-query, Apollo, etc.) to manage the application state in this task.
 - It would also be good to demonstrate any proficiency with Typescript you already have.
+
+## Development
+
+### `yarn start`
+
+Runs the app in the development mode with hot-reload.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+### `yarn test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `yarn build`
+
+Builds the app for production to the `build` folder.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
