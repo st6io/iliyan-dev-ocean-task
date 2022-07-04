@@ -1,0 +1,6 @@
+# Ignore dependencies directories
+node_modules
+
+# Ignore monorepo build directories
+build
+
