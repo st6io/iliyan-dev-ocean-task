@@ -5,7 +5,7 @@ import App from './App';
 test('renders learn react link', () => {
   render(<App />);
 
-  const linkElement = screen.getByText(/learn react/i);
+  const headerElement = screen.queryByText('Dummy Page');
 
-  expect(linkElement).toBeInTheDocument();
+  expect(headerElement).toBeInTheDocument();
 });
