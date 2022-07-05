@@ -1,9 +1,9 @@
 import { render, screen } from '@testing-library/react';
 
-import App from './App';
+import HomePage from './HomePage';
 
 test('renders learn react link', () => {
-  render(<App />);
+  render(<HomePage />);
 
   const headerElement = screen.queryByText('Dummy Page');
 

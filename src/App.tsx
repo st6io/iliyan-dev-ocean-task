@@ -1,25 +1,12 @@
-import { Preflight, ThemeProvider, defaultTheme, x } from '@xstyled/styled-components';
+import { Preflight, ThemeProvider, defaultTheme } from '@xstyled/styled-components';
 
-import logo from './logo.png';
+import HomePage from './HomePage';
 
 const App = () => (
   <ThemeProvider theme={defaultTheme}>
     <Preflight />
 
-    <x.header
-      bg="#282c34"
-      h="100vh"
-      display="flex"
-      flexDirection="column"
-      justifyContent="center"
-      alignItems="center"
-    >
-      <x.img src={logo} alt="business dir logo" />
-
-      <x.div mt={3} bg="salmon">
-        Dummy Page
-      </x.div>
-    </x.header>
+    <HomePage />
   </ThemeProvider>
 );
 
