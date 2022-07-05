@@ -14,7 +14,7 @@ const HomePage = () => (
     <x.img src={logo} alt="business dir logo" />
 
     <x.div mt={3} bg="salmon">
-      Dummy Page
+      Home Page
     </x.div>
   </x.header>
 );
