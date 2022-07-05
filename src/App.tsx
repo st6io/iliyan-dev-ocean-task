@@ -1,12 +1,16 @@
+import { BrowserRouter } from 'react-router-dom';
+
 import { Preflight, ThemeProvider, defaultTheme } from '@xstyled/styled-components';
 
-import HomePage from './HomePage';
+import Router from './Router';
 
 const App = () => (
   <ThemeProvider theme={defaultTheme}>
     <Preflight />
 
-    <HomePage />
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
   </ThemeProvider>
 );
 
