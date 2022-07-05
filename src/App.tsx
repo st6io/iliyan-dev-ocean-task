@@ -1,6 +1,6 @@
 import { Preflight, ThemeProvider, defaultTheme, x } from '@xstyled/styled-components';
 
-import logo from './logo.svg';
+import logo from './logo.png';
 import './App.css';
 
 const App = () => (
@@ -9,7 +9,7 @@ const App = () => (
 
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <x.img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
