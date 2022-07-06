@@ -1,7 +1,7 @@
 /* eslint-disable testing-library/no-container */
-import Layout from './Layout';
+import { render, screen } from '@src/utils/test';
 
-import { render, screen } from '../utils/test';
+import Layout from './Layout';
 
 const renderLayout = () => render(<Layout>Content</Layout>);
 
