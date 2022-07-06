@@ -4,17 +4,15 @@
     "import/order": [
       "error",
       {
-        "groups": [
-          "builtin",
-          "external",
-          "internal",
-          "sibling",
-          "parent",
-          "index"
-        ],
+        "groups": ["builtin", "external", "internal", "sibling", "parent", "index"],
         "pathGroups": [
           {
-            "pattern": "#/**",
+            "pattern": "@src/**",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern": "@components/**",
             "group": "internal",
             "position": "after"
           },
