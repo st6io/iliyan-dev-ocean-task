@@ -1,6 +1,8 @@
+import { Link } from 'react-router-dom';
+
 import { x } from '@xstyled/styled-components';
 
-import HomeLogoLink from './HomeLogoLink';
+import Logo from '../Logo';
 
 const Header = () => (
   <x.header
@@ -11,7 +13,9 @@ const Header = () => (
     py={5}
     boxShadow="0px 0px 10px 2px #EEEEEF"
   >
-    <HomeLogoLink />
+    <Link to="/">
+      <Logo />
+    </Link>
   </x.header>
 );
 
