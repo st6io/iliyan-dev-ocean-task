@@ -1,9 +1,10 @@
 import { ReactNode } from 'react';
 
 import { render, screen } from '@testing-library/react';
-import { ThemeProvider, defaultTheme } from '@xstyled/styled-components';
+import { ThemeProvider } from '@xstyled/styled-components';
 
 import App from './App';
+import theme from './theme';
 
 jest.mock('react-router-dom', () => ({
   ...jest.requireActual('react-router-dom'),
@@ -35,8 +36,8 @@ describe('App', () => {
   it('should render ThemeProvider with default theme', () => {
     render(<App />);
 
-    const [{ theme }] = (ThemeProvider as jest.Mock).mock.calls[0];
+    const [{ theme: actualTheme }] = (ThemeProvider as jest.Mock).mock.calls[0];
 
-    expect(theme).toMatchObject(defaultTheme);
+    expect(actualTheme).toEqual(theme);
   });
 });
