@@ -17,7 +17,7 @@ jest.mock('@xstyled/styled-components', () => ({
   ThemeProvider: jest.fn(),
 }));
 
-jest.mock('./Router', () => () => <div>Router</div>);
+jest.mock('@src/pages/Router', () => () => <div>Router</div>);
 
 describe('App', () => {
   it.each(['Preflight', 'BrowserRouter', 'Router'])(

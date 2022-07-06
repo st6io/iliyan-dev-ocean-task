@@ -1,5 +1,6 @@
+import { render, screen } from '@src/utils/test';
+
 import Router from './Router';
-import { render, screen } from './utils/test';
 
 describe('Router', () => {
   it.each([
