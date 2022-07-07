@@ -14,7 +14,7 @@ describe('Router', () => {
     },
     {
       path: '/business',
-      expectedText: 'Business Page',
+      expectedText: 'address',
     },
     {
       path: '/businesses',
