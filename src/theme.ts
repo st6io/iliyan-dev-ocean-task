@@ -7,7 +7,10 @@ const theme = {
     ...defaultTheme.colors,
     'light-grey': '#f8f8fa',
     primary: '#b41d76',
-    text: '#353449',
+    text: {
+      primary: '#353449',
+      secondary: '#92929d',
+    },
   },
 };
 

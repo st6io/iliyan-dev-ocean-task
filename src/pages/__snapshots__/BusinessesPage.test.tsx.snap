@@ -24,21 +24,21 @@ exports[`BusinessesPage should match snapshot 1`] = `
       class="sc-cxabCf wViMJ"
     >
       <table
-        class="sc-WCkqM sc-afnQL GQgxF kLsMyW"
+        class="sc-WCkqM sc-grVGCS GQgxF eKfFBe"
       >
         <thead
           class="sc-kYWVYA kzCKnj"
         >
           <tr
-            class="sc-jGprRt sc-iJkHyd  jTEOTv"
+            class="sc-jGprRt dezIds"
           >
             <th
-              class="sc-tsFYE sc-grVGCS jgyunm dcmlzK"
+              class="sc-tsFYE sc-iJkHyd jgyunm JjpSb"
             >
               name
             </th>
             <th
-              class="sc-tsFYE sc-grVGCS jgyunm dcmlzK"
+              class="sc-tsFYE sc-iJkHyd jgyunm JjpSb"
             >
               description
             </th>
@@ -48,225 +48,225 @@ exports[`BusinessesPage should match snapshot 1`] = `
           class="sc-ikjQzJ"
         >
           <tr
-            class="sc-jGprRt sc-iJkHyd  jTEOTv"
+            class="sc-jGprRt dezIds"
           >
             <td
-              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
             >
               Zazio
             </td>
             <td
-              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
             >
               Drainage of Subdural Space with Drain Dev, Open Approach
             </td>
           </tr>
           <tr
-            class="sc-jGprRt sc-iJkHyd  jTEOTv"
+            class="sc-jGprRt dezIds"
           >
             <td
-              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
             >
               Camido
             </td>
             <td
-              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
             >
               Supplement Right Foot Vein with Nonaut Sub, Open Approach
             </td>
           </tr>
           <tr
-            class="sc-jGprRt sc-iJkHyd  jTEOTv"
+            class="sc-jGprRt dezIds"
           >
             <td
-              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
             >
               Kimia
             </td>
             <td
-              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
             >
               Drainage of Bilateral Breast, Open Approach
             </td>
           </tr>
           <tr
-            class="sc-jGprRt sc-iJkHyd  jTEOTv"
+            class="sc-jGprRt dezIds"
           >
             <td
-              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
             >
               Pixoboo
             </td>
             <td
-              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
             >
               Bypass Bi Vas Deferens to L Vas Def w Nonaut Sub, Open
             </td>
           </tr>
           <tr
-            class="sc-jGprRt sc-iJkHyd  jTEOTv"
+            class="sc-jGprRt dezIds"
           >
             <td
-              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
             >
               Dabvine
             </td>
             <td
-              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
             >
               Excision of Colic Vein, Open Approach, Diagnostic
             </td>
           </tr>
           <tr
-            class="sc-jGprRt sc-iJkHyd  jTEOTv"
+            class="sc-jGprRt dezIds"
           >
             <td
-              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
             >
               Yakidoo
             </td>
             <td
-              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
             >
               Bypass Innom Art to L Up Arm Art w Synth Sub, Open
             </td>
           </tr>
           <tr
-            class="sc-jGprRt sc-iJkHyd  jTEOTv"
+            class="sc-jGprRt dezIds"
           >
             <td
-              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
             >
               Roomm
             </td>
             <td
-              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
             >
               Replace of R Metacarpophal Jt with Autol Sub, Open Approach
             </td>
           </tr>
           <tr
-            class="sc-jGprRt sc-iJkHyd  jTEOTv"
+            class="sc-jGprRt dezIds"
           >
             <td
-              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
             >
               Avaveo
             </td>
             <td
-              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
             >
               Plain Radiography of Bi Lacrimal Duct using L Osm Contrast
             </td>
           </tr>
           <tr
-            class="sc-jGprRt sc-iJkHyd  jTEOTv"
+            class="sc-jGprRt dezIds"
           >
             <td
-              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
             >
               Tagchat
             </td>
             <td
-              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
             >
               Stereotactic Particulate Radiosurgery of Ovary
             </td>
           </tr>
           <tr
-            class="sc-jGprRt sc-iJkHyd  jTEOTv"
+            class="sc-jGprRt dezIds"
           >
             <td
-              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
             >
               Avaveo
             </td>
             <td
-              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
             >
               Destruction of Superior Mesenteric Vein, Perc Endo Approach
             </td>
           </tr>
           <tr
-            class="sc-jGprRt sc-iJkHyd  jTEOTv"
+            class="sc-jGprRt dezIds"
           >
             <td
-              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
             >
               Skyvu
             </td>
             <td
-              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
             >
               Inspection of Right Upper Arm, Open Approach
             </td>
           </tr>
           <tr
-            class="sc-jGprRt sc-iJkHyd  jTEOTv"
+            class="sc-jGprRt dezIds"
           >
             <td
-              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
             >
               Rhynoodle
             </td>
             <td
-              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
             >
               Drainage of Right Nipple, Endo
             </td>
           </tr>
           <tr
-            class="sc-jGprRt sc-iJkHyd  jTEOTv"
+            class="sc-jGprRt dezIds"
           >
             <td
-              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
             >
               Voonyx
             </td>
             <td
-              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
             >
               Motor Function Treatment of Integu Up Back/UE
             </td>
           </tr>
           <tr
-            class="sc-jGprRt sc-iJkHyd  jTEOTv"
+            class="sc-jGprRt dezIds"
           >
             <td
-              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
             >
               Aivee
             </td>
             <td
-              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
             >
               Drainage of R Kidney Pelvis with Drain Dev, Open Approach
             </td>
           </tr>
           <tr
-            class="sc-jGprRt sc-iJkHyd  jTEOTv"
+            class="sc-jGprRt dezIds"
           >
             <td
-              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
             >
               Brainbox
             </td>
             <td
-              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
             >
               Transfuse Autol Fresh Plasma in Periph Art, Perc
             </td>
           </tr>
           <tr
-            class="sc-jGprRt sc-iJkHyd  jTEOTv"
+            class="sc-jGprRt dezIds"
           >
             <td
-              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
             >
               Twitternation
             </td>
             <td
-              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
             >
               Dilation of Tricuspid Valve with Intralum Dev, Perc Approach
             </td>
