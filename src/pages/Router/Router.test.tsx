@@ -6,11 +6,11 @@ describe('Router', () => {
   it.each([
     {
       path: '/',
-      expectedText: 'Businesses Page',
+      expectedText: 'description',
     },
     {
       path: '/non-existing-path',
-      expectedText: 'Businesses Page',
+      expectedText: 'description',
     },
     {
       path: '/business',
@@ -18,7 +18,7 @@ describe('Router', () => {
     },
     {
       path: '/businesses',
-      expectedText: 'Businesses Page',
+      expectedText: 'description',
     },
   ])('should open "$expectedText" when path "$path"', ({ path, expectedText }) => {
     render(<Router />, { path });
