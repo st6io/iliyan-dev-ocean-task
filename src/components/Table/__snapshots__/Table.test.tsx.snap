@@ -2,21 +2,21 @@
 
 exports[`Table should match snapshot 1`] = `
 <table
-  class="sc-WCkqM sc-afnQL  kLsMyW"
+  class="sc-WCkqM sc-grVGCS  eKfFBe"
 >
   <thead
     class="sc-kYWVYA kzCKnj"
   >
     <tr
-      class="sc-jGprRt sc-iJkHyd  jTEOTv"
+      class="sc-jGprRt dezIds"
     >
       <th
-        class="sc-tsFYE sc-grVGCS jgyunm dcmlzK"
+        class="sc-tsFYE sc-iJkHyd jgyunm JjpSb"
       >
         name
       </th>
       <th
-        class="sc-tsFYE sc-grVGCS jgyunm dcmlzK"
+        class="sc-tsFYE sc-iJkHyd jgyunm JjpSb"
       >
         description
       </th>
@@ -26,71 +26,71 @@ exports[`Table should match snapshot 1`] = `
     class="sc-ikjQzJ"
   >
     <tr
-      class="sc-jGprRt sc-iJkHyd  jTEOTv"
+      class="sc-jGprRt dezIds"
     >
       <td
-        class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+        class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
       >
         name 0
       </td>
       <td
-        class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+        class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
       >
         description 0
       </td>
     </tr>
     <tr
-      class="sc-jGprRt sc-iJkHyd  jTEOTv"
+      class="sc-jGprRt dezIds"
     >
       <td
-        class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+        class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
       >
         name 1
       </td>
       <td
-        class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+        class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
       >
         description 1
       </td>
     </tr>
     <tr
-      class="sc-jGprRt sc-iJkHyd  jTEOTv"
+      class="sc-jGprRt dezIds"
     >
       <td
-        class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+        class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
       >
         name 2
       </td>
       <td
-        class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+        class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
       >
         description 2
       </td>
     </tr>
     <tr
-      class="sc-jGprRt sc-iJkHyd  jTEOTv"
+      class="sc-jGprRt dezIds"
     >
       <td
-        class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+        class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
       >
         name 3
       </td>
       <td
-        class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+        class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
       >
         description 3
       </td>
     </tr>
     <tr
-      class="sc-jGprRt sc-iJkHyd  jTEOTv"
+      class="sc-jGprRt dezIds"
     >
       <td
-        class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+        class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
       >
         name 4
       </td>
       <td
-        class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+        class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
       >
         description 4
       </td>

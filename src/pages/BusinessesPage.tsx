@@ -43,7 +43,7 @@ const BusinessesPage = () => {
       <GlobalStyle />
 
       <x.div ref={ref} h={height} overflow="auto">
-        <Table headers={headers} rows={rows} w={1} />
+        <Table variant="primary" headers={headers} rows={rows} w={1} />
       </x.div>
     </Layout>
   );

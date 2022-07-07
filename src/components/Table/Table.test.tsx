@@ -37,19 +37,6 @@ describe('Table', () => {
     });
   });
 
-  it('should have rows with white background', () => {
-    renderTable();
-
-    const rows = screen.queryByRole('table')?.querySelectorAll('tr') || [];
-
-    expect(rows.length).toBeGreaterThan(0);
-    rows.forEach((rowElement) => {
-      expect(rowElement).toHaveStyle({
-        'background-color': 'rgb(255, 255, 255)',
-      });
-    });
-  });
-
   describe('head', () => {
     it('should have a sticky thead row', () => {
       const { queryThead } = renderTable();
@@ -95,6 +82,48 @@ describe('Table', () => {
             padding: '1.25rem',
             'text-align': 'start',
             color: '#353449',
+          });
+        });
+    });
+  });
+
+  describe('variants', () => {
+    it.each([
+      {
+        testName: 'should apply "primary" variant styles by default',
+        variant: undefined,
+        expected: {
+          bg: 'rgb(255, 255, 255)',
+          color: 'rgb(53, 52, 73)',
+        },
+      },
+      {
+        testName: 'should apply "secondary" variant styles',
+        variant: 'secondary',
+        expected: {
+          bg: 'rgb(248, 248, 250)',
+          color: 'rgb(146, 146, 157)',
+        },
+      },
+    ])('$testName', ({ variant, expected }) => {
+      renderTable({ rows, variant });
+
+      const trElements = screen.queryByRole('table')?.querySelectorAll('tr') || [];
+
+      expect(trElements.length).toBeGreaterThan(0);
+      trElements.forEach((rowElement) => {
+        expect(rowElement).toHaveStyle({
+          'background-color': expected.bg,
+        });
+      });
+
+      rows
+        .flatMap(({ cells }) => cells)
+        .forEach((cell) => {
+          const cellElement = screen.queryByText(cell);
+          expect(cellElement).toBeInTheDocument();
+          expect(cellElement).toHaveStyle({
+            color: expected.color,
           });
         });
     });
