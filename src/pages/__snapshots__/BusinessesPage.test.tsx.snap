@@ -1,0 +1,279 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BusinessesPage should match snapshot 1`] = `
+<div
+  class="sc-cxabCf FKOKy"
+>
+  <header
+    class="sc-efBctP eZxVPd"
+  >
+    <a
+      href="/"
+    >
+      <img
+        alt="home logo"
+        class="sc-BeQoi"
+        src="logo.png"
+      />
+    </a>
+  </header>
+  <div
+    class="sc-cxabCf bsgFzP"
+  >
+    <div
+      class="sc-cxabCf wViMJ"
+    >
+      <table
+        class="sc-WCkqM sc-afnQL GQgxF kLsMyW"
+      >
+        <thead
+          class="sc-kYWVYA kzCKnj"
+        >
+          <tr
+            class="sc-jGprRt sc-iJkHyd  jTEOTv"
+          >
+            <th
+              class="sc-tsFYE sc-grVGCS jgyunm dcmlzK"
+            >
+              name
+            </th>
+            <th
+              class="sc-tsFYE sc-grVGCS jgyunm dcmlzK"
+            >
+              description
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          class="sc-ikjQzJ"
+        >
+          <tr
+            class="sc-jGprRt sc-iJkHyd  jTEOTv"
+          >
+            <td
+              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+            >
+              Zazio
+            </td>
+            <td
+              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+            >
+              Drainage of Subdural Space with Drain Dev, Open Approach
+            </td>
+          </tr>
+          <tr
+            class="sc-jGprRt sc-iJkHyd  jTEOTv"
+          >
+            <td
+              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+            >
+              Camido
+            </td>
+            <td
+              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+            >
+              Supplement Right Foot Vein with Nonaut Sub, Open Approach
+            </td>
+          </tr>
+          <tr
+            class="sc-jGprRt sc-iJkHyd  jTEOTv"
+          >
+            <td
+              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+            >
+              Kimia
+            </td>
+            <td
+              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+            >
+              Drainage of Bilateral Breast, Open Approach
+            </td>
+          </tr>
+          <tr
+            class="sc-jGprRt sc-iJkHyd  jTEOTv"
+          >
+            <td
+              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+            >
+              Pixoboo
+            </td>
+            <td
+              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+            >
+              Bypass Bi Vas Deferens to L Vas Def w Nonaut Sub, Open
+            </td>
+          </tr>
+          <tr
+            class="sc-jGprRt sc-iJkHyd  jTEOTv"
+          >
+            <td
+              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+            >
+              Dabvine
+            </td>
+            <td
+              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+            >
+              Excision of Colic Vein, Open Approach, Diagnostic
+            </td>
+          </tr>
+          <tr
+            class="sc-jGprRt sc-iJkHyd  jTEOTv"
+          >
+            <td
+              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+            >
+              Yakidoo
+            </td>
+            <td
+              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+            >
+              Bypass Innom Art to L Up Arm Art w Synth Sub, Open
+            </td>
+          </tr>
+          <tr
+            class="sc-jGprRt sc-iJkHyd  jTEOTv"
+          >
+            <td
+              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+            >
+              Roomm
+            </td>
+            <td
+              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+            >
+              Replace of R Metacarpophal Jt with Autol Sub, Open Approach
+            </td>
+          </tr>
+          <tr
+            class="sc-jGprRt sc-iJkHyd  jTEOTv"
+          >
+            <td
+              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+            >
+              Avaveo
+            </td>
+            <td
+              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+            >
+              Plain Radiography of Bi Lacrimal Duct using L Osm Contrast
+            </td>
+          </tr>
+          <tr
+            class="sc-jGprRt sc-iJkHyd  jTEOTv"
+          >
+            <td
+              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+            >
+              Tagchat
+            </td>
+            <td
+              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+            >
+              Stereotactic Particulate Radiosurgery of Ovary
+            </td>
+          </tr>
+          <tr
+            class="sc-jGprRt sc-iJkHyd  jTEOTv"
+          >
+            <td
+              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+            >
+              Avaveo
+            </td>
+            <td
+              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+            >
+              Destruction of Superior Mesenteric Vein, Perc Endo Approach
+            </td>
+          </tr>
+          <tr
+            class="sc-jGprRt sc-iJkHyd  jTEOTv"
+          >
+            <td
+              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+            >
+              Skyvu
+            </td>
+            <td
+              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+            >
+              Inspection of Right Upper Arm, Open Approach
+            </td>
+          </tr>
+          <tr
+            class="sc-jGprRt sc-iJkHyd  jTEOTv"
+          >
+            <td
+              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+            >
+              Rhynoodle
+            </td>
+            <td
+              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+            >
+              Drainage of Right Nipple, Endo
+            </td>
+          </tr>
+          <tr
+            class="sc-jGprRt sc-iJkHyd  jTEOTv"
+          >
+            <td
+              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+            >
+              Voonyx
+            </td>
+            <td
+              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+            >
+              Motor Function Treatment of Integu Up Back/UE
+            </td>
+          </tr>
+          <tr
+            class="sc-jGprRt sc-iJkHyd  jTEOTv"
+          >
+            <td
+              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+            >
+              Aivee
+            </td>
+            <td
+              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+            >
+              Drainage of R Kidney Pelvis with Drain Dev, Open Approach
+            </td>
+          </tr>
+          <tr
+            class="sc-jGprRt sc-iJkHyd  jTEOTv"
+          >
+            <td
+              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+            >
+              Brainbox
+            </td>
+            <td
+              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+            >
+              Transfuse Autol Fresh Plasma in Periph Art, Perc
+            </td>
+          </tr>
+          <tr
+            class="sc-jGprRt sc-iJkHyd  jTEOTv"
+          >
+            <td
+              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+            >
+              Twitternation
+            </td>
+            <td
+              class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+            >
+              Dilation of Tricuspid Valve with Intralum Dev, Perc Approach
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table should match snapshot 1`] = `
+<table
+  class="sc-WCkqM sc-afnQL  kLsMyW"
+>
+  <thead
+    class="sc-kYWVYA kzCKnj"
+  >
+    <tr
+      class="sc-jGprRt sc-iJkHyd  jTEOTv"
+    >
+      <th
+        class="sc-tsFYE sc-grVGCS jgyunm dcmlzK"
+      >
+        name
+      </th>
+      <th
+        class="sc-tsFYE sc-grVGCS jgyunm dcmlzK"
+      >
+        description
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    class="sc-ikjQzJ"
+  >
+    <tr
+      class="sc-jGprRt sc-iJkHyd  jTEOTv"
+    >
+      <td
+        class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+      >
+        name 0
+      </td>
+      <td
+        class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+      >
+        description 0
+      </td>
+    </tr>
+    <tr
+      class="sc-jGprRt sc-iJkHyd  jTEOTv"
+    >
+      <td
+        class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+      >
+        name 1
+      </td>
+      <td
+        class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+      >
+        description 1
+      </td>
+    </tr>
+    <tr
+      class="sc-jGprRt sc-iJkHyd  jTEOTv"
+    >
+      <td
+        class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+      >
+        name 2
+      </td>
+      <td
+        class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+      >
+        description 2
+      </td>
+    </tr>
+    <tr
+      class="sc-jGprRt sc-iJkHyd  jTEOTv"
+    >
+      <td
+        class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+      >
+        name 3
+      </td>
+      <td
+        class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+      >
+        description 3
+      </td>
+    </tr>
+    <tr
+      class="sc-jGprRt sc-iJkHyd  jTEOTv"
+    >
+      <td
+        class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+      >
+        name 4
+      </td>
+      <td
+        class="sc-tsFYE sc-grVGCS liZNfH dcmlzK"
+      >
+        description 4
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
