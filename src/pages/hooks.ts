@@ -1,6 +1,6 @@
-import { gql, useQuery } from '@apollo/client';
+import { gql, useApolloClient, useQuery } from '@apollo/client';
 
-const BUSINESS_FRAGMENT = gql`
+export const BUSINESS_FRAGMENT = gql`
   fragment BusinessFragment on Business {
     id
     name
@@ -29,3 +29,19 @@ export const BUSINESSES_QUERY = gql`
 `;
 
 export const useBusinessesQuery = () => useQuery<{ businesses: Business[] }>(BUSINESSES_QUERY);
+
+export const useBusinessQuery = (id?: string) => {
+  // ensure businesses are fetched if not present in the cache
+  const { loading, error } = useBusinessesQuery();
+
+  const business: Business | null = useApolloClient().readFragment({
+    id: `Business:${id}`,
+    fragment: BUSINESS_FRAGMENT,
+  });
+
+  return {
+    loading,
+    error,
+    data: { business },
+  };
+};
