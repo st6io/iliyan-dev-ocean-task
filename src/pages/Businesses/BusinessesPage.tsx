@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+// import PlaceholderLoading from 'react-placeholder-loading';
 import { useNavigate } from 'react-router-dom';
 
 import { x } from '@xstyled/styled-components';
@@ -6,6 +7,7 @@ import { createGlobalStyle } from '@xstyled/styled-components';
 
 import Error from '@components/Error';
 import Layout from '@components/Layout';
+import LoadingPlaceholder from '@components/LoadingPlaceholder';
 import Table from '@components/Table';
 
 import { useBusinessesQuery } from '../hooks';
@@ -57,17 +59,19 @@ const BusinessesPage = () => {
 
       {error ? (
         <Error />
-      ) : loading ? (
-        <x.div>Loading...</x.div>
       ) : (
         <x.div ref={ref} h={height} overflow="auto">
-          <Table
-            variant="primary"
-            headers={headers}
-            rows={businessesRows}
-            onRowClick={onRowClick}
-            w={1}
-          />
+          {!loading ? (
+            <LoadingPlaceholder rows={20} />
+          ) : (
+            <Table
+              variant="primary"
+              headers={headers}
+              rows={businessesRows}
+              onRowClick={onRowClick}
+              w={1}
+            />
+          )}
         </x.div>
       )}
     </Layout>
