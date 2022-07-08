@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { x } from '@xstyled/styled-components';
 import { createGlobalStyle } from '@xstyled/styled-components';
 
+import Error from '@components/Error';
 import Layout from '@components/Layout';
 import Table from '@components/Table';
 
@@ -55,7 +56,7 @@ const BusinessesPage = () => {
       <GlobalStyle />
 
       {error ? (
-        <x.div>Error</x.div>
+        <Error />
       ) : loading ? (
         <x.div>Loading...</x.div>
       ) : (

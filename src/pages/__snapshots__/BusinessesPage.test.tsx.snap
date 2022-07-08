@@ -24,7 +24,7 @@ exports[`BusinessesPage should match snapshot 1`] = `
       class="sc-cxabCf iIlsBP"
     >
       <table
-        class="sc-WCkqM sc-grVGCS GQgxF eKfFBe"
+        class="sc-WCkqM sc-kngDgl GQgxF bjOxoH"
       >
         <thead
           class="sc-kYWVYA kzCKnj"
@@ -33,12 +33,12 @@ exports[`BusinessesPage should match snapshot 1`] = `
             class="sc-jGprRt dezIds"
           >
             <th
-              class="sc-tsFYE sc-iJkHyd jgyunm JjpSb"
+              class="sc-tsFYE sc-afnQL jgyunm RCrBC"
             >
               name
             </th>
             <th
-              class="sc-tsFYE sc-iJkHyd jgyunm JjpSb"
+              class="sc-tsFYE sc-afnQL jgyunm RCrBC"
             >
               description
             </th>
@@ -51,12 +51,12 @@ exports[`BusinessesPage should match snapshot 1`] = `
             class="sc-jGprRt ciIpUr"
           >
             <td
-              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
+              class="sc-tsFYE sc-afnQL liZNfH RCrBC"
             >
               Zazio
             </td>
             <td
-              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
+              class="sc-tsFYE sc-afnQL liZNfH RCrBC"
             >
               Drainage of Subdural Space with Drain Dev, Open Approach
             </td>
@@ -65,12 +65,12 @@ exports[`BusinessesPage should match snapshot 1`] = `
             class="sc-jGprRt ciIpUr"
           >
             <td
-              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
+              class="sc-tsFYE sc-afnQL liZNfH RCrBC"
             >
               Camido
             </td>
             <td
-              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
+              class="sc-tsFYE sc-afnQL liZNfH RCrBC"
             >
               Supplement Right Foot Vein with Nonaut Sub, Open Approach
             </td>
@@ -79,12 +79,12 @@ exports[`BusinessesPage should match snapshot 1`] = `
             class="sc-jGprRt ciIpUr"
           >
             <td
-              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
+              class="sc-tsFYE sc-afnQL liZNfH RCrBC"
             >
               Kimia
             </td>
             <td
-              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
+              class="sc-tsFYE sc-afnQL liZNfH RCrBC"
             >
               Drainage of Bilateral Breast, Open Approach
             </td>
@@ -93,12 +93,12 @@ exports[`BusinessesPage should match snapshot 1`] = `
             class="sc-jGprRt ciIpUr"
           >
             <td
-              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
+              class="sc-tsFYE sc-afnQL liZNfH RCrBC"
             >
               Pixoboo
             </td>
             <td
-              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
+              class="sc-tsFYE sc-afnQL liZNfH RCrBC"
             >
               Bypass Bi Vas Deferens to L Vas Def w Nonaut Sub, Open
             </td>
@@ -107,12 +107,12 @@ exports[`BusinessesPage should match snapshot 1`] = `
             class="sc-jGprRt ciIpUr"
           >
             <td
-              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
+              class="sc-tsFYE sc-afnQL liZNfH RCrBC"
             >
               Dabvine
             </td>
             <td
-              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
+              class="sc-tsFYE sc-afnQL liZNfH RCrBC"
             >
               Excision of Colic Vein, Open Approach, Diagnostic
             </td>
@@ -121,12 +121,12 @@ exports[`BusinessesPage should match snapshot 1`] = `
             class="sc-jGprRt ciIpUr"
           >
             <td
-              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
+              class="sc-tsFYE sc-afnQL liZNfH RCrBC"
             >
               Yakidoo
             </td>
             <td
-              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
+              class="sc-tsFYE sc-afnQL liZNfH RCrBC"
             >
               Bypass Innom Art to L Up Arm Art w Synth Sub, Open
             </td>
@@ -135,12 +135,12 @@ exports[`BusinessesPage should match snapshot 1`] = `
             class="sc-jGprRt ciIpUr"
           >
             <td
-              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
+              class="sc-tsFYE sc-afnQL liZNfH RCrBC"
             >
               Roomm
             </td>
             <td
-              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
+              class="sc-tsFYE sc-afnQL liZNfH RCrBC"
             >
               Replace of R Metacarpophal Jt with Autol Sub, Open Approach
             </td>
@@ -149,12 +149,12 @@ exports[`BusinessesPage should match snapshot 1`] = `
             class="sc-jGprRt ciIpUr"
           >
             <td
-              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
+              class="sc-tsFYE sc-afnQL liZNfH RCrBC"
             >
               Avaveo
             </td>
             <td
-              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
+              class="sc-tsFYE sc-afnQL liZNfH RCrBC"
             >
               Plain Radiography of Bi Lacrimal Duct using L Osm Contrast
             </td>
@@ -163,12 +163,12 @@ exports[`BusinessesPage should match snapshot 1`] = `
             class="sc-jGprRt ciIpUr"
           >
             <td
-              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
+              class="sc-tsFYE sc-afnQL liZNfH RCrBC"
             >
               Tagchat
             </td>
             <td
-              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
+              class="sc-tsFYE sc-afnQL liZNfH RCrBC"
             >
               Stereotactic Particulate Radiosurgery of Ovary
             </td>
@@ -177,12 +177,12 @@ exports[`BusinessesPage should match snapshot 1`] = `
             class="sc-jGprRt ciIpUr"
           >
             <td
-              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
+              class="sc-tsFYE sc-afnQL liZNfH RCrBC"
             >
               Avaveo
             </td>
             <td
-              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
+              class="sc-tsFYE sc-afnQL liZNfH RCrBC"
             >
               Destruction of Superior Mesenteric Vein, Perc Endo Approach
             </td>
@@ -191,12 +191,12 @@ exports[`BusinessesPage should match snapshot 1`] = `
             class="sc-jGprRt ciIpUr"
           >
             <td
-              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
+              class="sc-tsFYE sc-afnQL liZNfH RCrBC"
             >
               Skyvu
             </td>
             <td
-              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
+              class="sc-tsFYE sc-afnQL liZNfH RCrBC"
             >
               Inspection of Right Upper Arm, Open Approach
             </td>
@@ -205,12 +205,12 @@ exports[`BusinessesPage should match snapshot 1`] = `
             class="sc-jGprRt ciIpUr"
           >
             <td
-              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
+              class="sc-tsFYE sc-afnQL liZNfH RCrBC"
             >
               Rhynoodle
             </td>
             <td
-              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
+              class="sc-tsFYE sc-afnQL liZNfH RCrBC"
             >
               Drainage of Right Nipple, Endo
             </td>
@@ -219,12 +219,12 @@ exports[`BusinessesPage should match snapshot 1`] = `
             class="sc-jGprRt ciIpUr"
           >
             <td
-              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
+              class="sc-tsFYE sc-afnQL liZNfH RCrBC"
             >
               Voonyx
             </td>
             <td
-              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
+              class="sc-tsFYE sc-afnQL liZNfH RCrBC"
             >
               Motor Function Treatment of Integu Up Back/UE
             </td>
@@ -233,12 +233,12 @@ exports[`BusinessesPage should match snapshot 1`] = `
             class="sc-jGprRt ciIpUr"
           >
             <td
-              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
+              class="sc-tsFYE sc-afnQL liZNfH RCrBC"
             >
               Aivee
             </td>
             <td
-              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
+              class="sc-tsFYE sc-afnQL liZNfH RCrBC"
             >
               Drainage of R Kidney Pelvis with Drain Dev, Open Approach
             </td>
@@ -247,12 +247,12 @@ exports[`BusinessesPage should match snapshot 1`] = `
             class="sc-jGprRt ciIpUr"
           >
             <td
-              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
+              class="sc-tsFYE sc-afnQL liZNfH RCrBC"
             >
               Brainbox
             </td>
             <td
-              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
+              class="sc-tsFYE sc-afnQL liZNfH RCrBC"
             >
               Transfuse Autol Fresh Plasma in Periph Art, Perc
             </td>
@@ -261,12 +261,12 @@ exports[`BusinessesPage should match snapshot 1`] = `
             class="sc-jGprRt ciIpUr"
           >
             <td
-              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
+              class="sc-tsFYE sc-afnQL liZNfH RCrBC"
             >
               Twitternation
             </td>
             <td
-              class="sc-tsFYE sc-iJkHyd liZNfH JjpSb"
+              class="sc-tsFYE sc-afnQL liZNfH RCrBC"
             >
               Dilation of Tricuspid Valve with Intralum Dev, Perc Approach
             </td>
