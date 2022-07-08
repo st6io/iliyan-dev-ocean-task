@@ -1,14 +1,14 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 
-import BusinessPage from '../BusinessPage';
-import BusinessesPage from '../Businesses';
+import Business from '../Business';
+import Businesses from '../Businesses';
 
 const businessesPath = 'businesses';
 
 const Router = () => (
   <Routes>
-    <Route path={businessesPath} element={<BusinessesPage />} />
-    <Route path={`${businessesPath}/:businessId`} element={<BusinessPage />} />
+    <Route path={businessesPath} element={<Businesses />} />
+    <Route path={`${businessesPath}/:businessId`} element={<Business />} />
 
     <Route path="*" element={<Navigate to={businessesPath} replace />} />
   </Routes>
