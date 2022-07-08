@@ -2,7 +2,8 @@ import { render, screen } from '@src/utils/test';
 
 import Router from './Router';
 
-jest.mock('../BusinessesPage.tsx', () => () => <div>Businesses Page</div>);
+jest.mock('../BusinessesPage', () => () => <div>Businesses Page</div>);
+jest.mock('../BusinessPage', () => () => <div>Business Page</div>);
 
 describe('Router', () => {
   it.each([
@@ -15,8 +16,8 @@ describe('Router', () => {
       expectedText: 'Businesses Page',
     },
     {
-      path: '/business',
-      expectedText: 'address',
+      path: '/businesses/some-business-id',
+      expectedText: 'Business Page',
     },
     {
       path: '/businesses',
