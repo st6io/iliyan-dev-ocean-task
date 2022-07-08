@@ -1,3 +1,5 @@
+import { Route, Routes, useParams } from 'react-router-dom';
+
 import { InMemoryCache } from '@apollo/client';
 import { MockedProvider, MockedResponse } from '@apollo/client/testing';
 
@@ -18,11 +20,23 @@ const successQueryMock: MockedResponse = {
   },
 };
 
+const DummyBusinessPage = () => {
+  const { businessId } = useParams();
+
+  return <div>Business Page: {businessId}</div>;
+};
+
 const renderPage = (mock = successQueryMock) => ({
   ...render(
     <MockedProvider mocks={[mock]} cache={new InMemoryCache()}>
-      <BusinessesPage />
+      <Routes>
+        <Route path="businesses" element={<BusinessesPage />} />
+        <Route path="businesses/:businessId" element={<DummyBusinessPage />} />
+      </Routes>
     </MockedProvider>,
+    {
+      path: '/businesses',
+    },
   ),
 
   queryTableContainer: () => screen.queryByRole('table')?.parentElement,
@@ -38,6 +52,18 @@ describe('BusinessesPage', () => {
     await waitToLoadData();
 
     expect(container.firstChild).toMatchSnapshot();
+  });
+
+  it('should navigate to business page', async () => {
+    renderPage();
+
+    await waitToLoadData();
+
+    const [businessToClickOn] = businessesMock;
+
+    fireEvent.click(screen.getByText(businessToClickOn.name));
+
+    expect(screen.getByText(`Business Page: ${businessToClickOn.id}`)).toBeInTheDocument();
   });
 
   it('should wrap table in scrollable container', async () => {
