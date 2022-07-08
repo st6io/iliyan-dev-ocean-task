@@ -3,9 +3,9 @@ import { useParams } from 'react-router-dom';
 import { Props, x } from '@xstyled/styled-components';
 
 import Layout from '@components/Layout';
+import Section from '@components/Section';
 import Table from '@components/Table';
 
-import Section from './Section';
 import nearbyPlaces from './nearby-places.mock.json';
 
 import { useBusinessQuery } from '../hooks';
