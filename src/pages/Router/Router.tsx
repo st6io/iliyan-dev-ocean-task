@@ -1,7 +1,7 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 
 import BusinessPage from '../BusinessPage';
-import BusinessesPage from '../BusinessesPage';
+import BusinessesPage from '../Businesses';
 
 const businessesPath = 'businesses';
 

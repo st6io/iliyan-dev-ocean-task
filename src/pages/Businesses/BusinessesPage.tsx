@@ -8,7 +8,7 @@ import Error from '@components/Error';
 import Layout from '@components/Layout';
 import Table from '@components/Table';
 
-import { useBusinessesQuery } from './hooks';
+import { useBusinessesQuery } from '../hooks';
 
 const GlobalStyle = createGlobalStyle`
   body {

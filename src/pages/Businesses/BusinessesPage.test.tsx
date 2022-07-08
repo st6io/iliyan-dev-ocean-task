@@ -6,8 +6,9 @@ import { MockedProvider, MockedResponse } from '@apollo/client/testing';
 import { fireEvent, render, screen, waitFor } from '@src/utils/test';
 
 import BusinessesPage from './BusinessesPage';
-import businessesMock from './businesses.mock.json';
-import { BUSINESSES_QUERY } from './hooks';
+
+import businessesMock from '../businesses.mock.json';
+import { BUSINESSES_QUERY } from '../hooks';
 
 const successQueryMock: MockedResponse = {
   request: {
