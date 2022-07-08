@@ -1,4 +1,5 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import { x } from '@xstyled/styled-components';
 import { createGlobalStyle } from '@xstyled/styled-components';
@@ -17,6 +18,9 @@ const GlobalStyle = createGlobalStyle`
 const headers = ['name', 'description'];
 
 const BusinessesPage = () => {
+  const navigate = useNavigate();
+  const onRowClick = useCallback(({ id }: { id: string }) => navigate(`./${id}`), [navigate]);
+
   const { loading, error, data } = useBusinessesQuery();
   const businessesRows = useMemo(
     () =>
@@ -56,7 +60,13 @@ const BusinessesPage = () => {
         <x.div>Loading...</x.div>
       ) : (
         <x.div ref={ref} h={height} overflow="auto">
-          <Table variant="primary" headers={headers} rows={businessesRows} w={1} />
+          <Table
+            variant="primary"
+            headers={headers}
+            rows={businessesRows}
+            onRowClick={onRowClick}
+            w={1}
+          />
         </x.div>
       )}
     </Layout>
