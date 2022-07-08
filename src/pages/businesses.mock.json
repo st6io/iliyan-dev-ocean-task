@@ -1,5 +1,6 @@
 [
   {
+    "__typename": "Business",
     "id": "6758601439",
     "name": "Zazio",
     "description": "Drainage of Subdural Space with Drain Dev, Open Approach",
@@ -15,6 +16,7 @@
     }
   },
   {
+    "__typename": "Business",
     "id": "9843406486",
     "name": "Camido",
     "description": "Supplement Right Foot Vein with Nonaut Sub, Open Approach",
@@ -30,6 +32,7 @@
     }
   },
   {
+    "__typename": "Business",
     "id": "2355430861",
     "name": "Kimia",
     "description": "Drainage of Bilateral Breast, Open Approach",
@@ -45,6 +48,7 @@
     }
   },
   {
+    "__typename": "Business",
     "id": "2169020195",
     "name": "Pixoboo",
     "description": "Bypass Bi Vas Deferens to L Vas Def w Nonaut Sub, Open",
@@ -60,6 +64,7 @@
     }
   },
   {
+    "__typename": "Business",
     "id": "0714417599",
     "name": "Dabvine",
     "description": "Excision of Colic Vein, Open Approach, Diagnostic",
@@ -75,6 +80,7 @@
     }
   },
   {
+    "__typename": "Business",
     "id": "4745160623",
     "name": "Yakidoo",
     "description": "Bypass Innom Art to L Up Arm Art w Synth Sub, Open",
@@ -90,6 +96,7 @@
     }
   },
   {
+    "__typename": "Business",
     "id": "0425621537",
     "name": "Roomm",
     "description": "Replace of R Metacarpophal Jt with Autol Sub, Open Approach",
@@ -105,6 +112,7 @@
     }
   },
   {
+    "__typename": "Business",
     "id": "0057848408",
     "name": "Avaveo",
     "description": "Plain Radiography of Bi Lacrimal Duct using L Osm Contrast",
@@ -120,6 +128,7 @@
     }
   },
   {
+    "__typename": "Business",
     "id": "5938803306",
     "name": "Tagchat",
     "description": "Stereotactic Particulate Radiosurgery of Ovary",
@@ -135,6 +144,7 @@
     }
   },
   {
+    "__typename": "Business",
     "id": "0033511322",
     "name": "Avaveo",
     "description": "Destruction of Superior Mesenteric Vein, Perc Endo Approach",
@@ -150,6 +160,7 @@
     }
   },
   {
+    "__typename": "Business",
     "id": "0157619206",
     "name": "Skyvu",
     "description": "Inspection of Right Upper Arm, Open Approach",
@@ -165,6 +176,7 @@
     }
   },
   {
+    "__typename": "Business",
     "id": "9858501129",
     "name": "Rhynoodle",
     "description": "Drainage of Right Nipple, Endo",
@@ -180,6 +192,7 @@
     }
   },
   {
+    "__typename": "Business",
     "id": "2248767986",
     "name": "Voonyx",
     "description": "Motor Function Treatment of Integu Up Back/UE",
@@ -195,6 +208,7 @@
     }
   },
   {
+    "__typename": "Business",
     "id": "5564666054",
     "name": "Aivee",
     "description": "Drainage of R Kidney Pelvis with Drain Dev, Open Approach",
@@ -210,6 +224,7 @@
     }
   },
   {
+    "__typename": "Business",
     "id": "2328514138",
     "name": "Brainbox",
     "description": "Transfuse Autol Fresh Plasma in Periph Art, Perc",
@@ -225,6 +240,7 @@
     }
   },
   {
+    "__typename": "Business",
     "id": "2601300418",
     "name": "Twitternation",
     "description": "Dilation of Tricuspid Valve with Intralum Dev, Perc Approach",
