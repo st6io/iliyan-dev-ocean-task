@@ -35,17 +35,17 @@ exports[`BusinessPage should match snapshot 1`] = `
           class="sc-bWXABl kZOqy"
         >
           <div
-            class="sc-cxabCf sc-afnQL  eEWMdl"
+            class="sc-cxabCf sc-iJkHyd  bdVRyE"
           >
             address
           </div>
           <div
-            class="sc-cxabCf sc-kngDgl  jNZoFN"
+            class="sc-cxabCf sc-grVGCS  LTzaA"
           >
             84586 Straubel
           </div>
           <div
-            class="sc-cxabCf sc-kngDgl  jNZoFN"
+            class="sc-cxabCf sc-grVGCS  LTzaA"
           >
             Manchester, United Kingdom SG4
           </div>
@@ -54,17 +54,17 @@ exports[`BusinessPage should match snapshot 1`] = `
           class="sc-bWXABl"
         >
           <div
-            class="sc-cxabCf sc-afnQL  eEWMdl"
+            class="sc-cxabCf sc-iJkHyd  bdVRyE"
           >
             contact
           </div>
           <div
-            class="sc-cxabCf sc-kngDgl  jNZoFN"
+            class="sc-cxabCf sc-grVGCS  LTzaA"
           >
             609-306-3610
           </div>
           <div
-            class="sc-cxabCf sc-kngDgl  jNZoFN"
+            class="sc-cxabCf sc-grVGCS  LTzaA"
           >
             igowanlock0@networkadvertising.org
           </div>
@@ -77,12 +77,12 @@ exports[`BusinessPage should match snapshot 1`] = `
           class="sc-bWXABl kgzIGE"
         >
           <div
-            class="sc-cxabCf sc-afnQL  eEWMdl"
+            class="sc-cxabCf sc-iJkHyd  bdVRyE"
           >
             nearby places
           </div>
           <table
-            class="sc-WCkqM sc-grVGCS GQgxF eKfFBe"
+            class="sc-WCkqM sc-kngDgl GQgxF bjOxoH"
           >
             <tbody
               class="sc-ikjQzJ"
@@ -91,12 +91,12 @@ exports[`BusinessPage should match snapshot 1`] = `
                 class="sc-jGprRt finCRX"
               >
                 <td
-                  class="sc-tsFYE sc-iJkHyd fMNVnW JjpSb"
+                  class="sc-tsFYE sc-afnQL fMNVnW RCrBC"
                 >
                   Caffè Nero
                 </td>
                 <td
-                  class="sc-tsFYE sc-iJkHyd fMNVnW JjpSb"
+                  class="sc-tsFYE sc-afnQL fMNVnW RCrBC"
                 >
                   1st Floor, c/o Morleys, 472-488 Brixton Rd, London SW9 8EH
                 </td>
@@ -105,12 +105,12 @@ exports[`BusinessPage should match snapshot 1`] = `
                 class="sc-jGprRt finCRX"
               >
                 <td
-                  class="sc-tsFYE sc-iJkHyd fMNVnW JjpSb"
+                  class="sc-tsFYE sc-afnQL fMNVnW RCrBC"
                 >
                   EAT.
                 </td>
                 <td
-                  class="sc-tsFYE sc-iJkHyd fMNVnW JjpSb"
+                  class="sc-tsFYE sc-afnQL fMNVnW RCrBC"
                 >
                   2nd Floor, c/o Morleys, 472-488 Brixton Rd, London SW9 8EH
                 </td>
@@ -119,12 +119,12 @@ exports[`BusinessPage should match snapshot 1`] = `
                 class="sc-jGprRt finCRX"
               >
                 <td
-                  class="sc-tsFYE sc-iJkHyd fMNVnW JjpSb"
+                  class="sc-tsFYE sc-afnQL fMNVnW RCrBC"
                 >
                   Pret A Manager
                 </td>
                 <td
-                  class="sc-tsFYE sc-iJkHyd fMNVnW JjpSb"
+                  class="sc-tsFYE sc-afnQL fMNVnW RCrBC"
                 >
                   3rd Floor, c/o Morleys, 472-488 Brixton Rd, London SW9 8EH
                 </td>
@@ -133,12 +133,12 @@ exports[`BusinessPage should match snapshot 1`] = `
                 class="sc-jGprRt finCRX"
               >
                 <td
-                  class="sc-tsFYE sc-iJkHyd fMNVnW JjpSb"
+                  class="sc-tsFYE sc-afnQL fMNVnW RCrBC"
                 >
                   Coffee Republic
                 </td>
                 <td
-                  class="sc-tsFYE sc-iJkHyd fMNVnW JjpSb"
+                  class="sc-tsFYE sc-afnQL fMNVnW RCrBC"
                 >
                   4th Floor, c/o Morleys, 472-488 Brixton Rd, London SW9 8EH
                 </td>

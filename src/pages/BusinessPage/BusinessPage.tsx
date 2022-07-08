@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom';
 
 import { Props, x } from '@xstyled/styled-components';
 
+import Error from '@components/Error';
 import Layout from '@components/Layout';
 import Section from '@components/Section';
 import Table from '@components/Table';
@@ -27,7 +28,7 @@ const BusinessPage = () => {
   return (
     <Layout>
       {error ? (
-        <x.div>Error</x.div>
+        <Error />
       ) : loading ? (
         <x.div>Loading...</x.div>
       ) : (

@@ -202,7 +202,8 @@ describe('BusinessPage', () => {
 
       await waitToLoadData();
 
-      expect(screen.getByText('Error')).toBeInTheDocument();
+      expect(screen.getByText('Something went wrong.')).toBeInTheDocument();
+      expect(screen.getByText('Please try again later.')).toBeInTheDocument();
     });
   });
 });
