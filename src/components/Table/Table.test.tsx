@@ -1,4 +1,4 @@
-import { render, screen } from '@src/utils/test';
+import { fireEvent, render, screen } from '@src/utils/test';
 
 import Table from './Table';
 
@@ -35,6 +35,17 @@ describe('Table', () => {
     expect(screen.queryByRole('table')).toHaveStyle({
       'border-spacing': '0 0.4rem',
     });
+  });
+
+  it('should invoke onRowClick(row) when row clicked', () => {
+    const onRowClick = jest.fn();
+    renderTable({ onRowClick });
+
+    const firstRowCell = rows[0].cells[0];
+    fireEvent.click(screen.getByText(firstRowCell));
+
+    expect(onRowClick).toHaveBeenCalledTimes(1);
+    expect(onRowClick).toHaveBeenCalledWith(rows[0]);
   });
 
   describe('head', () => {
