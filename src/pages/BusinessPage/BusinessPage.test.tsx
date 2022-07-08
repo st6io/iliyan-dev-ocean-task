@@ -1,24 +1,72 @@
-import { render, screen } from '@src/utils/test';
+import { Route, Routes } from 'react-router-dom';
+
+import { DocumentNode, InMemoryCache } from '@apollo/client';
+import { MockedProvider, MockedResponse } from '@apollo/client/testing';
+
+import { render, screen, waitFor } from '@src/utils/test';
 
 import BusinessPage from './BusinessPage';
 import nearbyPlaces from './nearby-places.mock.json';
+
+import mockBusinesses from '../businesses.mock.json';
+import { BUSINESSES_QUERY, BUSINESS_FRAGMENT as MockBusinessFragment } from '../hooks';
+
+jest.mock('@apollo/client', () => ({
+  ...jest.requireActual('@apollo/client'),
+  useApolloClient: () => ({
+    readFragment: ({ id, fragment }: { id?: string; fragment: DocumentNode }) => {
+      if (fragment.toString() === MockBusinessFragment.toString()) {
+        const entityId = id?.replace('Business:', '');
+        return mockBusinesses.find((business) => business.id === entityId);
+      }
+    },
+  }),
+}));
 
 const nearbyPlacesRows = nearbyPlaces.map(({ name, address }, index) => ({
   id: `name`,
   cells: [name, address],
 }));
 
-const renderPage = () => render(<BusinessPage />);
+const successBusinessesQueryMock: MockedResponse = {
+  request: {
+    query: BUSINESSES_QUERY,
+  },
+  result: {
+    data: {
+      businesses: mockBusinesses,
+    },
+  },
+};
+
+const renderPage = (mock = successBusinessesQueryMock) =>
+  render(
+    <MockedProvider mocks={[mock]} cache={new InMemoryCache()}>
+      <Routes>
+        <Route path="businesses/:businessId" element={<BusinessPage />} />
+      </Routes>
+    </MockedProvider>,
+    {
+      path: `/businesses/${mockBusinesses[0].id}`,
+    },
+  );
+
+const waitToLoadData = () =>
+  waitFor(() => expect(screen.queryByText('Loading...')).not.toBeInTheDocument());
 
 describe('BusinessPage', () => {
-  it('should match snapshot', () => {
+  it('should match snapshot', async () => {
     const { container } = renderPage();
+
+    await waitToLoadData();
 
     expect(container.firstChild).toMatchSnapshot();
   });
 
-  it('should render image cover with correct styles', () => {
+  it('should render image cover with correct styles', async () => {
     renderPage();
+
+    await waitToLoadData();
 
     const [, coverImg] = screen.queryAllByRole('img');
 
@@ -35,8 +83,10 @@ describe('BusinessPage', () => {
     });
   });
 
-  it('should apply correct spacing between section groups', () => {
+  it('should apply correct spacing between section groups', async () => {
     renderPage();
+
+    await waitToLoadData();
 
     const [, img] = screen.queryAllByRole('img');
     const contentElement = img.nextSibling;
@@ -48,8 +98,10 @@ describe('BusinessPage', () => {
   });
 
   describe('Address', () => {
-    it('should apply correct styles to section "Address"', () => {
+    it('should apply correct styles to section "Address"', async () => {
       renderPage();
+
+      await waitToLoadData();
 
       const addressTitle = screen.queryByText('address');
       expect(addressTitle).toBeInTheDocument();
@@ -66,8 +118,10 @@ describe('BusinessPage', () => {
       });
     });
 
-    it('should render full address', () => {
+    it('should render full address', async () => {
       renderPage();
+
+      await waitToLoadData();
 
       expect(screen.getByText('84586 Straubel')).toBeInTheDocument();
       expect(screen.getByText('Manchester, United Kingdom SG4')).toBeInTheDocument();
@@ -75,8 +129,10 @@ describe('BusinessPage', () => {
   });
 
   describe('Contact', () => {
-    it('should apply correct styles to section "Contact"', () => {
+    it('should apply correct styles to section "Contact"', async () => {
       renderPage();
+
+      await waitToLoadData();
 
       const contactTitle = screen.queryByText('contact');
       expect(contactTitle).toBeInTheDocument();
@@ -90,8 +146,10 @@ describe('BusinessPage', () => {
   });
 
   describe('Nearby Places', () => {
-    it('should render section group with background', () => {
+    it('should render section group with background', async () => {
       renderPage();
+
+      await waitToLoadData();
 
       const placesTitle = screen.queryByText('nearby places');
       const sectionGroup = placesTitle?.parentNode?.parentNode;
@@ -100,8 +158,10 @@ describe('BusinessPage', () => {
       });
     });
 
-    it('should use table with "secondary" variant', () => {
+    it('should use table with "secondary" variant', async () => {
       renderPage();
+
+      await waitToLoadData();
 
       const trElements = screen.queryByRole('table')?.querySelectorAll('tr') || [];
       expect(trElements.length).toBeGreaterThan(0);
@@ -120,6 +180,29 @@ describe('BusinessPage', () => {
             color: 'rgb(146, 146, 157)',
           });
         });
+    });
+
+    it('should render loading screen', () => {
+      renderPage();
+
+      expect(screen.getByText('Loading...')).toBeInTheDocument();
+    });
+
+    it('should render error screen', async () => {
+      const errorQueryMock = {
+        request: {
+          query: BUSINESSES_QUERY,
+        },
+        result: {
+          data: undefined,
+        },
+        error: new Error('Something went wrong'),
+      };
+      renderPage(errorQueryMock);
+
+      await waitToLoadData();
+
+      expect(screen.getByText('Error')).toBeInTheDocument();
     });
   });
 });

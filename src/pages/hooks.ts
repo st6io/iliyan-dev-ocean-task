@@ -1,6 +1,6 @@
 import { gql, useApolloClient, useQuery } from '@apollo/client';
 
-const BUSINESS_FRAGMENT = gql`
+export const BUSINESS_FRAGMENT = gql`
   fragment BusinessFragment on Business {
     id
     name

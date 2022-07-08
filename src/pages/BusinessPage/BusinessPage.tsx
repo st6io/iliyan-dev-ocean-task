@@ -1,3 +1,5 @@
+import { useParams } from 'react-router-dom';
+
 import { Props, x } from '@xstyled/styled-components';
 
 import Layout from '@components/Layout';
@@ -6,10 +8,7 @@ import Table from '@components/Table';
 import Section from './Section';
 import nearbyPlaces from './nearby-places.mock.json';
 
-import businessesData from '../businesses.mock.json';
-
-const { name, image, address, phone, email } = businessesData[0];
-const { number, street, city, zip, country } = address;
+import { useBusinessQuery } from '../hooks';
 
 const nearbyPlacesRows = nearbyPlaces.map(({ name, address }) => ({
   id: name,
@@ -18,32 +17,48 @@ const nearbyPlacesRows = nearbyPlaces.map(({ name, address }) => ({
 
 const SectionGroup = (props: Props) => <x.div display="flex" py={8} px={7} {...props} />;
 
-const BusinessPage = () => (
-  <Layout>
-    <x.img src={image} alt={`${name} cover photo`} w={1} h="40vh" objectFit="cover"></x.img>
+const BusinessPage = () => {
+  const { businessId } = useParams();
+  const { loading, error, data } = useBusinessQuery(businessId);
 
-    <x.div display="flex" justifyContent="space-between" my={8} mx={12}>
-      <SectionGroup justifyContent="space-around" flex={4} mr={5}>
-        <Section title="address" mr={10}>
-          <Section.Text>{`${number} ${street}`}</Section.Text>
+  const { name, image, address, phone, email } = data?.business || {};
+  const { number, street, city, zip, country } = address || {};
 
-          <Section.Text>{`${city}, ${country} ${zip}`}</Section.Text>
-        </Section>
+  return (
+    <Layout>
+      {error ? (
+        <x.div>Error</x.div>
+      ) : loading ? (
+        <x.div>Loading...</x.div>
+      ) : (
+        <>
+          <x.img src={image} alt={`${name} cover photo`} w={1} h="40vh" objectFit="cover"></x.img>
 
-        <Section title="contact">
-          <Section.Text>{phone}</Section.Text>
+          <x.div display="flex" justifyContent="space-between" my={8} mx={12}>
+            <SectionGroup justifyContent="space-around" flex={4} mr={5}>
+              <Section title="address" mr={10}>
+                <Section.Text>{`${number} ${street}`}</Section.Text>
 
-          <Section.Text>{email}</Section.Text>
-        </Section>
-      </SectionGroup>
+                <Section.Text>{`${city}, ${country} ${zip}`}</Section.Text>
+              </Section>
 
-      <SectionGroup bg="white" flex={5}>
-        <Section title="nearby places" flex={1}>
-          <Table variant="secondary" rows={nearbyPlacesRows} w={1} />
-        </Section>
-      </SectionGroup>
-    </x.div>
-  </Layout>
-);
+              <Section title="contact">
+                <Section.Text>{phone}</Section.Text>
+
+                <Section.Text>{email}</Section.Text>
+              </Section>
+            </SectionGroup>
+
+            <SectionGroup bg="white" flex={5}>
+              <Section title="nearby places" flex={1}>
+                <Table variant="secondary" rows={nearbyPlacesRows} w={1} />
+              </Section>
+            </SectionGroup>
+          </x.div>
+        </>
+      )}
+    </Layout>
+  );
+};
 
 export default BusinessPage;
