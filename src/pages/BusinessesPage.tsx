@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 
 import { x } from '@xstyled/styled-components';
 import { createGlobalStyle } from '@xstyled/styled-components';
@@ -6,7 +6,7 @@ import { createGlobalStyle } from '@xstyled/styled-components';
 import Layout from '@components/Layout';
 import Table from '@components/Table';
 
-import businessesData from './businesses.mock.json';
+import { useBusinessesQuery } from './hooks';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -15,12 +15,20 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const headers = ['name', 'description'];
-const rows = businessesData.map(({ id, name, description }) => ({
-  id,
-  cells: [name, description],
-}));
 
 const BusinessesPage = () => {
+  const { loading, error, data } = useBusinessesQuery();
+  const businessesRows = useMemo(
+    () =>
+      data?.businesses
+        ? data.businesses.map(({ id, name, description }) => ({
+            id,
+            cells: [name, description],
+          }))
+        : [],
+    [data],
+  );
+
   const [height, setHeight] = useState('100vh');
   const ref = useRef<any>();
 
@@ -42,9 +50,15 @@ const BusinessesPage = () => {
     <Layout>
       <GlobalStyle />
 
-      <x.div ref={ref} h={height} overflow="auto">
-        <Table variant="primary" headers={headers} rows={rows} w={1} />
-      </x.div>
+      {error ? (
+        <x.div>Error</x.div>
+      ) : loading ? (
+        <x.div>Loading...</x.div>
+      ) : (
+        <x.div ref={ref} h={height} overflow="auto">
+          <Table variant="primary" headers={headers} rows={businessesRows} w={1} />
+        </x.div>
+      )}
     </Layout>
   );
 };
