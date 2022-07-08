@@ -4,6 +4,7 @@ interface Props extends SystemProps {
   rows: RowType[];
   headers?: string[];
   variant?: VariantType;
+  onRowClick?: (row: RowType) => void;
 }
 
 export enum Variant {
@@ -32,7 +33,13 @@ const StyledTable = styled(x.table)`
   border-spacing: 0 0.4rem;
 `;
 
-const Table = ({ rows, headers = [], variant = Variant.Primary, ...otherProps }: Props) => (
+const Table = ({
+  rows,
+  onRowClick,
+  headers = [],
+  variant = Variant.Primary,
+  ...otherProps
+}: Props) => (
   <StyledTable {...otherProps}>
     {headers.length ? (
       <x.thead position="sticky" top={0}>
@@ -47,9 +54,14 @@ const Table = ({ rows, headers = [], variant = Variant.Primary, ...otherProps }:
     ) : null}
 
     <x.tbody>
-      {rows.map(({ id, cells }) => (
-        <x.tr key={id} bg={backgroundByVariant[variant]}>
-          {cells.map((cell) => (
+      {rows.map((row) => (
+        <x.tr
+          key={row.id}
+          bg={{ _: backgroundByVariant[variant], hover: onRowClick ? 'light-grey' : null }}
+          cursor={onRowClick ? 'pointer' : 'auto'}
+          onClick={() => onRowClick?.(row)}
+        >
+          {row.cells.map((cell) => (
             <Cell key={cell} color={`text.${variant}`}>
               {cell}
             </Cell>
