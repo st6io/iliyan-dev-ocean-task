@@ -63,7 +63,7 @@ const Table = ({
       {rows.map((row) => (
         <x.tr
           key={row.id}
-          bg={{ _: backgroundByVariant[variant], hover: onRowClick ? 'light-grey' : null }}
+          bg={{ _: backgroundByVariant[variant], hover: onRowClick ? 'grey' : null }}
           cursor={onRowClick ? 'pointer' : 'auto'}
           onClick={() => onRowClick?.(row)}
         >
