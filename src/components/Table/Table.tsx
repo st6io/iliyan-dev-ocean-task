@@ -1,3 +1,6 @@
+import { useMemo } from 'react';
+import PlaceholderLoading from 'react-placeholder-loading';
+
 import styled, { SystemProps, x } from '@xstyled/styled-components';
 
 interface Props extends SystemProps {
@@ -28,9 +31,11 @@ const Cell = styled(x.td)`
   padding: 5;
 `;
 
+const rowSpace = '0.4rem';
+
 const StyledTable = styled(x.table)`
   // xstyled doesn't support utility prop "borderSpacing"
-  border-spacing: 0 0.4rem;
+  border-spacing: 0 ${rowSpace};
 `;
 
 const Table = ({
@@ -71,5 +76,25 @@ const Table = ({
     </x.tbody>
   </StyledTable>
 );
+
+interface LoadingPlaceholderProps {
+  rowsCount: number;
+}
+
+export const LoadingPlaceholder = ({ rowsCount }: LoadingPlaceholderProps) => {
+  const keys = useMemo(() => new Array(rowsCount).fill(null).map((_, index) => index), [rowsCount]);
+
+  return (
+    <>
+      {keys.map((key) => (
+        <x.div key={key} mt={{ _: rowSpace, first: 0 }}>
+          <PlaceholderLoading shape="rect" colorStart="white" width="100%" height={60} />
+        </x.div>
+      ))}
+    </>
+  );
+};
+
+Table.LoadingPlaceholder = LoadingPlaceholder;
 
 export default Table;
