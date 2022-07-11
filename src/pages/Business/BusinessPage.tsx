@@ -6,16 +6,10 @@ import Error from '@components/Error';
 import Layout from '@components/Layout';
 import LoadingPlaceholder from '@components/LoadingPlaceholder';
 import Section from '@components/Section';
-import Table, { LoadingPlaceholder as TablePlaceholder } from '@components/Table';
 
-import nearbyPlaces from './nearby-places.mock.json';
+import NearbyPlaces from './NearbyPlaces';
 
 import { useBusinessQuery } from '../hooks';
-
-const nearbyPlacesRows = nearbyPlaces.map(({ name, address }) => ({
-  id: name,
-  cells: [name, address],
-}));
 
 const SectionGroup = (props: Props) => <x.div display="flex" py={8} px={7} {...props} />;
 
@@ -72,13 +66,7 @@ const BusinessPage = () => {
         </SectionGroup>
 
         <SectionGroup bg="white" flex={5} flexDirection="column">
-          {loading ? (
-            <TablePlaceholder rowsCount={10} />
-          ) : (
-            <Section title="nearby places" flex={1}>
-              <Table variant="secondary" rows={nearbyPlacesRows} w={1} />
-            </Section>
-          )}
+          <NearbyPlaces business={data.business} loading={loading} />
         </SectionGroup>
       </x.div>
     </Layout>
