@@ -13,7 +13,7 @@ describe('Router', () => {
     },
     {
       path: '/non-existing-path',
-      expectedText: 'Businesses Page',
+      expectedText: 'Oops, page not found',
     },
     {
       path: '/businesses/some-business-id',
