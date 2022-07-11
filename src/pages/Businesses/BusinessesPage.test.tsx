@@ -10,6 +10,13 @@ import BusinessesPage from './BusinessesPage';
 import businessesMock from '../businesses.mock.json';
 import { BUSINESSES_QUERY } from '../hooks';
 
+jest.mock('react-placeholder-loading', () => (props: any) => (
+  <div>
+    <span>TablePlaceholder:</span>
+    {JSON.stringify(props, null, 2)}
+  </div>
+));
+
 const successQueryMock: MockedResponse = {
   request: {
     query: BUSINESSES_QUERY,
@@ -43,8 +50,7 @@ const renderPage = (mock = successQueryMock) => ({
   queryTableContainer: () => screen.queryByRole('table')?.parentElement,
 });
 
-const waitToLoadData = () =>
-  waitFor(() => expect(screen.queryByText('Loading...')).not.toBeInTheDocument());
+const waitToLoadData = () => waitFor(() => screen.findByText(businessesMock[0].name));
 
 describe('BusinessesPage', () => {
   it('should match snapshot', async () => {
@@ -58,9 +64,9 @@ describe('BusinessesPage', () => {
   it('should navigate to business page', async () => {
     renderPage();
 
-    await waitToLoadData();
-
     const [businessToClickOn] = businessesMock;
+
+    await waitToLoadData();
 
     fireEvent.click(screen.getByText(businessToClickOn.name));
 
@@ -84,7 +90,7 @@ describe('BusinessesPage', () => {
     await waitToLoadData();
 
     expect(queryTableContainer()).toHaveStyle({
-      height: '100vh',
+      height: `${window.innerHeight}px`,
     });
 
     window.innerHeight = initialWindowHeight + heightChange;
@@ -96,9 +102,10 @@ describe('BusinessesPage', () => {
   });
 
   it('should render loading screen', () => {
-    renderPage();
+    const { container } = renderPage();
 
-    expect(screen.getByText('Loading...')).toBeInTheDocument();
+    expect(screen.queryAllByText('TablePlaceholder:').length).toEqual(20);
+    expect(container.firstChild).toMatchSnapshot();
   });
 
   it('should render error screen', async () => {
@@ -113,9 +120,7 @@ describe('BusinessesPage', () => {
     };
     renderPage(errorQueryMock);
 
-    await waitToLoadData();
-
-    expect(screen.getByText('Something went wrong.')).toBeInTheDocument();
-    expect(screen.getByText('Please try again later.')).toBeInTheDocument();
+    await screen.findByText('Something went wrong.');
+    await screen.findByText('Please try again later.');
   });
 });

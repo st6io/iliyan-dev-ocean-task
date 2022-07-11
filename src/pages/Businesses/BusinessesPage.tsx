@@ -6,7 +6,7 @@ import { createGlobalStyle } from '@xstyled/styled-components';
 
 import Error from '@components/Error';
 import Layout from '@components/Layout';
-import Table from '@components/Table';
+import Table, { LoadingPlaceholder } from '@components/Table';
 
 import { useBusinessesQuery } from '../hooks';
 
@@ -57,17 +57,19 @@ const BusinessesPage = () => {
 
       {error ? (
         <Error />
-      ) : loading ? (
-        <x.div>Loading...</x.div>
       ) : (
         <x.div ref={ref} h={height} overflow="auto">
-          <Table
-            variant="primary"
-            headers={headers}
-            rows={businessesRows}
-            onRowClick={onRowClick}
-            w={1}
-          />
+          {loading ? (
+            <LoadingPlaceholder rowsCount={20} />
+          ) : (
+            <Table
+              variant="primary"
+              headers={headers}
+              rows={businessesRows}
+              onRowClick={onRowClick}
+              w={1}
+            />
+          )}
         </x.div>
       )}
     </Layout>
