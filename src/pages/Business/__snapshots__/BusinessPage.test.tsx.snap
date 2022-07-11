@@ -36,7 +36,7 @@ exports[`BusinessPage Nearby Places should render loading screen 1`] = `
       </div>
     </div>
     <div
-      class="sc-cxabCf TyWjI"
+      class="sc-cxabCf cTSDup"
     >
       <div
         class="sc-cxabCf fBBkYE"
@@ -242,7 +242,7 @@ exports[`BusinessPage should match snapshot 1`] = `
       />
     </div>
     <div
-      class="sc-cxabCf TyWjI"
+      class="sc-cxabCf cTSDup"
     >
       <div
         class="sc-cxabCf fBBkYE"
