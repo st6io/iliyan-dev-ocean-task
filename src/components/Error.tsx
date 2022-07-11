@@ -1,4 +1,4 @@
-import { SystemProps, x } from '@xstyled/styled-components';
+import { SystemProps } from '@xstyled/styled-components';
 
 import Section from './Section';
 
