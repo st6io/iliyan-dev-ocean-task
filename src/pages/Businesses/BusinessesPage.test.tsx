@@ -55,7 +55,7 @@ describe('BusinessesPage', () => {
     expect(container.firstChild).toMatchSnapshot();
   });
 
-  it('should navigate to business page', async () => {
+  it.only('should navigate to business page', async () => {
     renderPage();
 
     await waitToLoadData();
