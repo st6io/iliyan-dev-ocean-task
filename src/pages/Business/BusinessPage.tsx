@@ -44,7 +44,13 @@ const BusinessPage = () => {
         )}
       </x.div>
 
-      <x.div display="flex" justifyContent="space-between" my={8} mx={12}>
+      <x.div
+        display="flex"
+        flexDirection={{ _: 'column', lg: 'row' }}
+        justifyContent="space-between"
+        my={8}
+        mx={12}
+      >
         <SectionGroup justifyContent="space-around" flex={4} mr={5}>
           {loading ? (
             <LoadingPlaceholder height="50%" />
