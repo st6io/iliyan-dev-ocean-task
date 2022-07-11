@@ -29,6 +29,10 @@ The goal of this task is to create a very basic business directory.
 
 ## Development
 
+### `yarn install`
+
+Install packages
+
 ### `yarn start`
 
 Runs the app in the development mode with hot-reload.\
