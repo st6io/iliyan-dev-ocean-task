@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotFoundPage should match snapshot 1`] = `
+<div
+  class="sc-cxabCf FKOKy"
+>
+  <header
+    class="sc-efBctP eZxVPd"
+  >
+    <a
+      href="/"
+    >
+      <img
+        alt="home logo"
+        class="sc-BeQoi"
+        src="logo.png"
+      />
+    </a>
+  </header>
+  <div
+    class="sc-cxabCf bsgFzP"
+  >
+    <section
+      class="sc-bWXABl iFEscH"
+    >
+      <div
+        class="sc-cxabCf sc-iJkHyd  bdVRyE"
+      >
+        404
+      </div>
+      <div
+        class="sc-cxabCf sc-grVGCS  LTzaA"
+      >
+        Oops, page not found
+      </div>
+    </section>
+  </div>
+</div>
+`;
