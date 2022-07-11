@@ -116,96 +116,6 @@ exports[`BusinessPage Nearby Places should render loading screen 1`] = `
 }
           </div>
         </div>
-        <div
-          class="sc-cxabCf eWXKur"
-        >
-          <div>
-            <span>
-              Placeholder:
-            </span>
-            {
-  "shape": "rect",
-  "colorStart": "white",
-  "width": "100%",
-  "height": 60
-}
-          </div>
-        </div>
-        <div
-          class="sc-cxabCf eWXKur"
-        >
-          <div>
-            <span>
-              Placeholder:
-            </span>
-            {
-  "shape": "rect",
-  "colorStart": "white",
-  "width": "100%",
-  "height": 60
-}
-          </div>
-        </div>
-        <div
-          class="sc-cxabCf eWXKur"
-        >
-          <div>
-            <span>
-              Placeholder:
-            </span>
-            {
-  "shape": "rect",
-  "colorStart": "white",
-  "width": "100%",
-  "height": 60
-}
-          </div>
-        </div>
-        <div
-          class="sc-cxabCf eWXKur"
-        >
-          <div>
-            <span>
-              Placeholder:
-            </span>
-            {
-  "shape": "rect",
-  "colorStart": "white",
-  "width": "100%",
-  "height": 60
-}
-          </div>
-        </div>
-        <div
-          class="sc-cxabCf eWXKur"
-        >
-          <div>
-            <span>
-              Placeholder:
-            </span>
-            {
-  "shape": "rect",
-  "colorStart": "white",
-  "width": "100%",
-  "height": 60
-}
-          </div>
-        </div>
-        <div
-          class="sc-cxabCf eWXKur"
-        >
-          <div>
-            <span>
-              Placeholder:
-            </span>
-            {
-  "shape": "rect",
-  "colorStart": "white",
-  "width": "100%",
-  "height": 60
-}
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -309,26 +219,12 @@ exports[`BusinessPage should match snapshot 1`] = `
                 <td
                   class="sc-tsFYE sc-afnQL fMNVnW RCrBC"
                 >
-                  Caffè Nero
+                  Kimia
                 </td>
                 <td
                   class="sc-tsFYE sc-afnQL fMNVnW RCrBC"
                 >
-                  1st Floor, c/o Morleys, 472-488 Brixton Rd, London SW9 8EH
-                </td>
-              </tr>
-              <tr
-                class="sc-jGprRt finCRX"
-              >
-                <td
-                  class="sc-tsFYE sc-afnQL fMNVnW RCrBC"
-                >
-                  EAT.
-                </td>
-                <td
-                  class="sc-tsFYE sc-afnQL fMNVnW RCrBC"
-                >
-                  2nd Floor, c/o Morleys, 472-488 Brixton Rd, London SW9 8EH
+                  6 Tennyson, Manchester LS9
                 </td>
               </tr>
               <tr
@@ -337,12 +233,12 @@ exports[`BusinessPage should match snapshot 1`] = `
                 <td
                   class="sc-tsFYE sc-afnQL fMNVnW RCrBC"
                 >
-                  Pret A Manager
+                  Pixoboo
                 </td>
                 <td
                   class="sc-tsFYE sc-afnQL fMNVnW RCrBC"
                 >
-                  3rd Floor, c/o Morleys, 472-488 Brixton Rd, London SW9 8EH
+                  7730 Sage, Manchester IV1
                 </td>
               </tr>
               <tr
@@ -351,12 +247,12 @@ exports[`BusinessPage should match snapshot 1`] = `
                 <td
                   class="sc-tsFYE sc-afnQL fMNVnW RCrBC"
                 >
-                  Coffee Republic
+                  Dabvine
                 </td>
                 <td
                   class="sc-tsFYE sc-afnQL fMNVnW RCrBC"
                 >
-                  4th Floor, c/o Morleys, 472-488 Brixton Rd, London SW9 8EH
+                  34 Mcbride, Manchester OX7
                 </td>
               </tr>
             </tbody>

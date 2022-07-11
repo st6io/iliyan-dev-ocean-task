@@ -6,7 +6,6 @@ import { MockedProvider, MockedResponse } from '@apollo/client/testing';
 import { render, screen, waitFor } from '@src/utils/test';
 
 import BusinessPage from './BusinessPage';
-import nearbyPlaces from './nearby-places.mock.json';
 
 import mockBusinesses from '../businesses.mock.json';
 import { BUSINESSES_QUERY, BUSINESS_FRAGMENT as MockBusinessFragment } from '../hooks';
@@ -30,10 +29,20 @@ jest.mock('react-placeholder-loading', () => (props: any) => (
   </div>
 ));
 
-const nearbyPlacesRows = nearbyPlaces.map(({ name, address }, index) => ({
-  id: `name`,
-  cells: [name, address],
-}));
+const nearbyPlacesRows = [
+  {
+    id: 'Kimia',
+    cells: ['Kimia', '6 Tennyson, Manchester LS9'],
+  },
+  {
+    id: 'Pixoboo',
+    cells: ['Pixoboo', '7730 Sage, Manchester IV1'],
+  },
+  {
+    id: 'Dabvine',
+    cells: ['Dabvine', '34 Mcbride, Manchester OX7'],
+  },
+];
 
 const successBusinessesQueryMock: MockedResponse = {
   request: {
@@ -58,7 +67,7 @@ const renderPage = (mock = successBusinessesQueryMock) =>
     },
   );
 
-const waitToLoadData = () => waitFor(() => screen.findByText(nearbyPlaces[0].name));
+const waitToLoadData = () => waitFor(() => screen.findByText('address'));
 
 describe('BusinessPage', () => {
   it('should match snapshot', async () => {
