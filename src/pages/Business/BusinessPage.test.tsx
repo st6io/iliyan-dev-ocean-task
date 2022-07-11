@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import { DocumentNode, InMemoryCache } from '@apollo/client';
 import { MockedProvider, MockedResponse } from '@apollo/client/testing';
 
-import { render, screen, waitFor } from '@src/utils/test';
+import { fireEvent, render, screen, waitFor } from '@src/utils/test';
 
 import BusinessPage from './BusinessPage';
 
@@ -195,6 +195,18 @@ describe('BusinessPage', () => {
             color: 'rgb(146, 146, 157)',
           });
         });
+    });
+
+    it('should navigate to nearby business page on Nearby Places row click', async () => {
+      renderPage();
+
+      await waitToLoadData();
+
+      fireEvent.click(screen.getByText('Kimia'));
+
+      // Kimia Contact section
+      expect(screen.getByText('762-896-8094')).toBeInTheDocument();
+      expect(screen.getByText('bfurmonger2@ask.com')).toBeInTheDocument();
     });
   });
 

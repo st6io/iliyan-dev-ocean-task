@@ -1,4 +1,7 @@
-import { useMemo } from 'react';
+import { useCallback, useMemo } from 'react';
+import { useNavigate } from 'react-router-dom';
+
+import { businessesPath } from '@src/pages/Router';
 
 import Section from '@components/Section';
 import Table, { LoadingPlaceholder as TablePlaceholder } from '@components/Table';
@@ -15,17 +18,23 @@ const getNearbyBusinesses = (
   businesses: Business[],
 ) => businesses?.filter(({ id, address }) => id !== businessId && address.city === city);
 
-const toNearbyPlaceRow = ({ name, address }: Business) => {
+const toNearbyPlaceRow = ({ id, name, address }: Business) => {
   const { number, street, city, zip } = address;
   const fullAddress = `${number} ${street}, ${city} ${zip}`;
 
   return {
-    id: name,
+    id,
     cells: [name, fullAddress],
   };
 };
 
 const NearbyPlaces = ({ business, loading }: Props) => {
+  const navigate = useNavigate();
+  const onRowClick = useCallback(
+    ({ id }: { id: string }) => navigate(`../${businessesPath}/${id}`),
+    [navigate],
+  );
+
   const { loading: businessesLoading, data } = useBusinessesQuery();
 
   const nearbyPlacesRows = useMemo(
@@ -42,7 +51,7 @@ const NearbyPlaces = ({ business, loading }: Props) => {
 
   return (
     <Section title="nearby places" flex={1}>
-      <Table variant="secondary" rows={nearbyPlacesRows} w={1} />
+      <Table variant="secondary" rows={nearbyPlacesRows} onRowClick={onRowClick} w={1} />
     </Section>
   );
 };

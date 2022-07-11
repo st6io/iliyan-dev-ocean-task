@@ -4,7 +4,7 @@ import Business from '../Business';
 import Businesses from '../Businesses';
 import NotFound from '../NotFound';
 
-const businessesPath = 'businesses';
+export const businessesPath = 'businesses';
 
 const Router = () => (
   <Routes>
