@@ -23,6 +23,13 @@ jest.mock('@apollo/client', () => ({
   }),
 }));
 
+jest.mock('react-placeholder-loading', () => (props: any) => (
+  <div>
+    <span>Placeholder:</span>
+    {JSON.stringify(props, null, 2)}
+  </div>
+));
+
 const nearbyPlacesRows = nearbyPlaces.map(({ name, address }, index) => ({
   id: `name`,
   cells: [name, address],
@@ -51,8 +58,7 @@ const renderPage = (mock = successBusinessesQueryMock) =>
     },
   );
 
-const waitToLoadData = () =>
-  waitFor(() => expect(screen.queryByText('Loading...')).not.toBeInTheDocument());
+const waitToLoadData = () => waitFor(() => screen.findByText(nearbyPlaces[0].name));
 
 describe('BusinessPage', () => {
   it('should match snapshot', async () => {
@@ -78,7 +84,7 @@ describe('BusinessPage', () => {
     expect(coverImg).toHaveAttribute('alt', 'Zazio cover photo');
     expect(coverImg).toHaveStyle({
       width: '100%',
-      height: '40vh',
+      height: '100%',
       'object-fit': 'cover',
     });
   });
@@ -89,7 +95,7 @@ describe('BusinessPage', () => {
     await waitToLoadData();
 
     const [, img] = screen.queryAllByRole('img');
-    const contentElement = img.nextSibling;
+    const contentElement = img.parentNode?.nextSibling;
 
     expect(contentElement).toHaveStyle({
       display: 'flex',
@@ -183,9 +189,9 @@ describe('BusinessPage', () => {
     });
 
     it('should render loading screen', () => {
-      renderPage();
+      const { container } = renderPage();
 
-      expect(screen.getByText('Loading...')).toBeInTheDocument();
+      expect(container.firstChild).toMatchSnapshot();
     });
 
     it('should render error screen', async () => {
@@ -200,10 +206,8 @@ describe('BusinessPage', () => {
       };
       renderPage(errorQueryMock);
 
-      await waitToLoadData();
-
-      expect(screen.getByText('Something went wrong.')).toBeInTheDocument();
-      expect(screen.getByText('Please try again later.')).toBeInTheDocument();
+      await screen.findByText('Something went wrong.');
+      await screen.findByText('Please try again later.');
     });
   });
 });

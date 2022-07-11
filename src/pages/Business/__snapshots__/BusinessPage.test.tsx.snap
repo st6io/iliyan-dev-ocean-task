@@ -1,5 +1,217 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`BusinessPage Nearby Places should render loading screen 1`] = `
+<div
+  class="sc-cxabCf FKOKy"
+>
+  <header
+    class="sc-efBctP eZxVPd"
+  >
+    <a
+      href="/"
+    >
+      <img
+        alt="home logo"
+        class="sc-BeQoi"
+        src="logo.png"
+      />
+    </a>
+  </header>
+  <div
+    class="sc-cxabCf bsgFzP"
+  >
+    <div
+      class="sc-cxabCf kaJeMk"
+    >
+      <div>
+        <span>
+          Placeholder:
+        </span>
+        {
+  "shape": "rect",
+  "colorStart": "white",
+  "width": "100%",
+  "height": "100%"
+}
+      </div>
+    </div>
+    <div
+      class="sc-cxabCf hinPhb"
+    >
+      <div
+        class="sc-cxabCf fBBkYE"
+      >
+        <div>
+          <span>
+            Placeholder:
+          </span>
+          {
+  "shape": "rect",
+  "colorStart": "white",
+  "width": "100%",
+  "height": "50%"
+}
+        </div>
+      </div>
+      <div
+        class="sc-cxabCf cdUYaI"
+      >
+        <div
+          class="sc-cxabCf eWXKur"
+        >
+          <div>
+            <span>
+              Placeholder:
+            </span>
+            {
+  "shape": "rect",
+  "colorStart": "white",
+  "width": "100%",
+  "height": 60
+}
+          </div>
+        </div>
+        <div
+          class="sc-cxabCf eWXKur"
+        >
+          <div>
+            <span>
+              Placeholder:
+            </span>
+            {
+  "shape": "rect",
+  "colorStart": "white",
+  "width": "100%",
+  "height": 60
+}
+          </div>
+        </div>
+        <div
+          class="sc-cxabCf eWXKur"
+        >
+          <div>
+            <span>
+              Placeholder:
+            </span>
+            {
+  "shape": "rect",
+  "colorStart": "white",
+  "width": "100%",
+  "height": 60
+}
+          </div>
+        </div>
+        <div
+          class="sc-cxabCf eWXKur"
+        >
+          <div>
+            <span>
+              Placeholder:
+            </span>
+            {
+  "shape": "rect",
+  "colorStart": "white",
+  "width": "100%",
+  "height": 60
+}
+          </div>
+        </div>
+        <div
+          class="sc-cxabCf eWXKur"
+        >
+          <div>
+            <span>
+              Placeholder:
+            </span>
+            {
+  "shape": "rect",
+  "colorStart": "white",
+  "width": "100%",
+  "height": 60
+}
+          </div>
+        </div>
+        <div
+          class="sc-cxabCf eWXKur"
+        >
+          <div>
+            <span>
+              Placeholder:
+            </span>
+            {
+  "shape": "rect",
+  "colorStart": "white",
+  "width": "100%",
+  "height": 60
+}
+          </div>
+        </div>
+        <div
+          class="sc-cxabCf eWXKur"
+        >
+          <div>
+            <span>
+              Placeholder:
+            </span>
+            {
+  "shape": "rect",
+  "colorStart": "white",
+  "width": "100%",
+  "height": 60
+}
+          </div>
+        </div>
+        <div
+          class="sc-cxabCf eWXKur"
+        >
+          <div>
+            <span>
+              Placeholder:
+            </span>
+            {
+  "shape": "rect",
+  "colorStart": "white",
+  "width": "100%",
+  "height": 60
+}
+          </div>
+        </div>
+        <div
+          class="sc-cxabCf eWXKur"
+        >
+          <div>
+            <span>
+              Placeholder:
+            </span>
+            {
+  "shape": "rect",
+  "colorStart": "white",
+  "width": "100%",
+  "height": 60
+}
+          </div>
+        </div>
+        <div
+          class="sc-cxabCf eWXKur"
+        >
+          <div>
+            <span>
+              Placeholder:
+            </span>
+            {
+  "shape": "rect",
+  "colorStart": "white",
+  "width": "100%",
+  "height": 60
+}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`BusinessPage should match snapshot 1`] = `
 <div
   class="sc-cxabCf FKOKy"
@@ -20,11 +232,15 @@ exports[`BusinessPage should match snapshot 1`] = `
   <div
     class="sc-cxabCf bsgFzP"
   >
-    <img
-      alt="Zazio cover photo"
-      class="sc-BeQoi lpbvHV"
-      src="https://images.unsplash.com/photo-1527015175922-36a306cf0e20?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&w=1000"
-    />
+    <div
+      class="sc-cxabCf kaJeMk"
+    >
+      <img
+        alt="Zazio cover photo"
+        class="sc-BeQoi dRxsHj"
+        src="https://images.unsplash.com/photo-1527015175922-36a306cf0e20?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&w=1000"
+      />
+    </div>
     <div
       class="sc-cxabCf hinPhb"
     >
@@ -71,7 +287,7 @@ exports[`BusinessPage should match snapshot 1`] = `
         </section>
       </div>
       <div
-        class="sc-cxabCf bNCOOk"
+        class="sc-cxabCf cdUYaI"
       >
         <section
           class="sc-bWXABl kgzIGE"
