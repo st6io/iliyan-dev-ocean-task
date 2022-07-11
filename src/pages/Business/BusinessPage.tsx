@@ -49,7 +49,7 @@ const BusinessPage = () => {
         flexDirection={{ _: 'column', lg: 'row' }}
         justifyContent="space-between"
         my={8}
-        mx={12}
+        mx={{ _: 2, sm: 12 }}
       >
         <SectionGroup justifyContent="space-around" flex={4} mr={5}>
           {loading ? (
