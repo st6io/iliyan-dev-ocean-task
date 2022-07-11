@@ -196,27 +196,27 @@ describe('BusinessPage', () => {
           });
         });
     });
+  });
 
-    it('should render loading screen', () => {
-      const { container } = renderPage();
+  it('should render loading screen', () => {
+    const { container } = renderPage();
 
-      expect(container.firstChild).toMatchSnapshot();
-    });
+    expect(container.firstChild).toMatchSnapshot();
+  });
 
-    it('should render error screen', async () => {
-      const errorQueryMock = {
-        request: {
-          query: BUSINESSES_QUERY,
-        },
-        result: {
-          data: undefined,
-        },
-        error: new Error('Something went wrong'),
-      };
-      renderPage(errorQueryMock);
+  it('should render error screen', async () => {
+    const errorQueryMock = {
+      request: {
+        query: BUSINESSES_QUERY,
+      },
+      result: {
+        data: undefined,
+      },
+      error: new Error('Something went wrong'),
+    };
+    renderPage(errorQueryMock);
 
-      await screen.findByText('Something went wrong.');
-      await screen.findByText('Please try again later.');
-    });
+    await screen.findByText('Something went wrong.');
+    await screen.findByText('Please try again later.');
   });
 });

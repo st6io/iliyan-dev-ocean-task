@@ -1,127 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`BusinessPage Nearby Places should render loading screen 1`] = `
-<div
-  class="sc-cxabCf FKOKy"
->
-  <header
-    class="sc-efBctP eZxVPd"
-  >
-    <a
-      href="/"
-    >
-      <img
-        alt="home logo"
-        class="sc-BeQoi"
-        src="logo.png"
-      />
-    </a>
-  </header>
-  <div
-    class="sc-cxabCf bsgFzP"
-  >
-    <div
-      class="sc-cxabCf kaJeMk"
-    >
-      <div>
-        <span>
-          Placeholder:
-        </span>
-        {
-  "shape": "rect",
-  "colorStart": "white",
-  "width": "100%",
-  "height": "100%"
-}
-      </div>
-    </div>
-    <div
-      class="sc-cxabCf cTSDup"
-    >
-      <div
-        class="sc-cxabCf fBBkYE"
-      >
-        <div>
-          <span>
-            Placeholder:
-          </span>
-          {
-  "shape": "rect",
-  "colorStart": "white",
-  "width": "100%",
-  "height": "50%"
-}
-        </div>
-      </div>
-      <div
-        class="sc-cxabCf cdUYaI"
-      >
-        <div
-          class="sc-cxabCf eWXKur"
-        >
-          <div>
-            <span>
-              Placeholder:
-            </span>
-            {
-  "shape": "rect",
-  "colorStart": "white",
-  "width": "100%",
-  "height": 60
-}
-          </div>
-        </div>
-        <div
-          class="sc-cxabCf eWXKur"
-        >
-          <div>
-            <span>
-              Placeholder:
-            </span>
-            {
-  "shape": "rect",
-  "colorStart": "white",
-  "width": "100%",
-  "height": 60
-}
-          </div>
-        </div>
-        <div
-          class="sc-cxabCf eWXKur"
-        >
-          <div>
-            <span>
-              Placeholder:
-            </span>
-            {
-  "shape": "rect",
-  "colorStart": "white",
-  "width": "100%",
-  "height": 60
-}
-          </div>
-        </div>
-        <div
-          class="sc-cxabCf eWXKur"
-        >
-          <div>
-            <span>
-              Placeholder:
-            </span>
-            {
-  "shape": "rect",
-  "colorStart": "white",
-  "width": "100%",
-  "height": 60
-}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
 exports[`BusinessPage should match snapshot 1`] = `
 <div
   class="sc-cxabCf FKOKy"
@@ -258,6 +136,128 @@ exports[`BusinessPage should match snapshot 1`] = `
             </tbody>
           </table>
         </section>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`BusinessPage should render loading screen 1`] = `
+<div
+  class="sc-cxabCf FKOKy"
+>
+  <header
+    class="sc-efBctP eZxVPd"
+  >
+    <a
+      href="/"
+    >
+      <img
+        alt="home logo"
+        class="sc-BeQoi"
+        src="logo.png"
+      />
+    </a>
+  </header>
+  <div
+    class="sc-cxabCf bsgFzP"
+  >
+    <div
+      class="sc-cxabCf kaJeMk"
+    >
+      <div>
+        <span>
+          Placeholder:
+        </span>
+        {
+  "shape": "rect",
+  "colorStart": "white",
+  "width": "100%",
+  "height": "100%"
+}
+      </div>
+    </div>
+    <div
+      class="sc-cxabCf cTSDup"
+    >
+      <div
+        class="sc-cxabCf fBBkYE"
+      >
+        <div>
+          <span>
+            Placeholder:
+          </span>
+          {
+  "shape": "rect",
+  "colorStart": "white",
+  "width": "100%",
+  "height": "50%"
+}
+        </div>
+      </div>
+      <div
+        class="sc-cxabCf cdUYaI"
+      >
+        <div
+          class="sc-cxabCf eWXKur"
+        >
+          <div>
+            <span>
+              Placeholder:
+            </span>
+            {
+  "shape": "rect",
+  "colorStart": "white",
+  "width": "100%",
+  "height": 60
+}
+          </div>
+        </div>
+        <div
+          class="sc-cxabCf eWXKur"
+        >
+          <div>
+            <span>
+              Placeholder:
+            </span>
+            {
+  "shape": "rect",
+  "colorStart": "white",
+  "width": "100%",
+  "height": 60
+}
+          </div>
+        </div>
+        <div
+          class="sc-cxabCf eWXKur"
+        >
+          <div>
+            <span>
+              Placeholder:
+            </span>
+            {
+  "shape": "rect",
+  "colorStart": "white",
+  "width": "100%",
+  "height": 60
+}
+          </div>
+        </div>
+        <div
+          class="sc-cxabCf eWXKur"
+        >
+          <div>
+            <span>
+              Placeholder:
+            </span>
+            {
+  "shape": "rect",
+  "colorStart": "white",
+  "width": "100%",
+  "height": 60
+}
+          </div>
+        </div>
       </div>
     </div>
   </div>
