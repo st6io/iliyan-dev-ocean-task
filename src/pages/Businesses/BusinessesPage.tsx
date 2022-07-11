@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { ReactNode, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import { x } from '@xstyled/styled-components';
@@ -17,6 +17,14 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const headers = ['name', 'description'];
+
+const StyledLayout = ({ children }: { children: ReactNode }) => (
+  <Layout>
+    <GlobalStyle />
+
+    {children}
+  </Layout>
+);
 
 const BusinessesPage = () => {
   const navigate = useNavigate();
@@ -51,28 +59,30 @@ const BusinessesPage = () => {
     return () => window.removeEventListener('resize', onResize);
   }, []);
 
-  return (
-    <Layout>
-      <GlobalStyle />
-
-      {error ? (
+  if (error) {
+    return (
+      <StyledLayout>
         <Error />
-      ) : (
-        <x.div ref={ref} h={height} overflow="auto">
-          {loading ? (
-            <LoadingPlaceholder rowsCount={20} />
-          ) : (
-            <Table
-              variant="primary"
-              headers={headers}
-              rows={businessesRows}
-              onRowClick={onRowClick}
-              w={1}
-            />
-          )}
-        </x.div>
-      )}
-    </Layout>
+      </StyledLayout>
+    );
+  }
+
+  return (
+    <StyledLayout>
+      <x.div ref={ref} h={height} overflow="auto">
+        {loading ? (
+          <LoadingPlaceholder rowsCount={20} />
+        ) : (
+          <Table
+            variant="primary"
+            headers={headers}
+            rows={businessesRows}
+            onRowClick={onRowClick}
+            w={1}
+          />
+        )}
+      </x.div>
+    </StyledLayout>
   );
 };
 
