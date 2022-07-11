@@ -1,10 +1,10 @@
-import PlaceholderLoading from 'react-placeholder-loading';
 import { useParams } from 'react-router-dom';
 
 import { Props, x } from '@xstyled/styled-components';
 
 import Error from '@components/Error';
 import Layout from '@components/Layout';
+import LoadingPlaceholder from '@components/LoadingPlaceholder';
 import Section from '@components/Section';
 import Table, { LoadingPlaceholder as TablePlaceholder } from '@components/Table';
 
@@ -16,10 +16,6 @@ const nearbyPlacesRows = nearbyPlaces.map(({ name, address }) => ({
   id: name,
   cells: [name, address],
 }));
-
-const Placeholder = (props: any) => (
-  <PlaceholderLoading shape="rect" colorStart="white" width="100%" height="100%" {...props} />
-);
 
 const SectionGroup = (props: Props) => <x.div display="flex" py={8} px={7} {...props} />;
 
@@ -38,7 +34,7 @@ const BusinessPage = () => {
         <>
           <x.div h="40vh">
             {loading ? (
-              <Placeholder />
+              <LoadingPlaceholder />
             ) : (
               <x.img
                 src={image}
@@ -53,7 +49,7 @@ const BusinessPage = () => {
           <x.div display="flex" justifyContent="space-between" my={8} mx={12}>
             <SectionGroup justifyContent="space-around" flex={4} mr={5}>
               {loading ? (
-                <Placeholder height="50%" />
+                <LoadingPlaceholder height="50%" />
               ) : (
                 <>
                   <Section title="address" mr={10}>
