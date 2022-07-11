@@ -1,7 +1,8 @@
 import { useMemo } from 'react';
-import PlaceholderLoading from 'react-placeholder-loading';
 
 import styled, { SystemProps, x } from '@xstyled/styled-components';
+
+import Placeholder from '@components/LoadingPlaceholder';
 
 interface Props extends SystemProps {
   rows: RowType[];
@@ -88,7 +89,7 @@ export const LoadingPlaceholder = ({ rowsCount }: LoadingPlaceholderProps) => {
     <>
       {keys.map((key) => (
         <x.div key={key} mt={{ _: rowSpace, first: 0 }}>
-          <PlaceholderLoading shape="rect" colorStart="white" width="100%" height={60} />
+          <Placeholder height={60} />
         </x.div>
       ))}
     </>
